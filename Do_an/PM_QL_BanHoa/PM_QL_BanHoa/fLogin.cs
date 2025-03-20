@@ -27,12 +27,21 @@ namespace PM_QL_BanHoa
         private void btnLogin_Click(object sender, EventArgs e)
         {
             fTableManager f = new fTableManager();
-            //DataProvider provider = new DataProvider();
-            //string query = "Select * FROM dbo.NhanVien";
-            //provider.ExecuteQuery(query);
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            DataProvider provider = new DataProvider();
+            string Username = txtUserName.Text;
+            string Password = txtPassword.Text;
+            string query = $"SELECT * FROM dbo.NhanVien WHERE TenDangNhap = '{ Username}' AND MatKhau = '{Password}'";
+            DataTable data = provider.ExecuteQuery(query);
+            if (data.Rows.Count>0)
+            {
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Dang nhap that bai");
+            }
         }
 
         private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
