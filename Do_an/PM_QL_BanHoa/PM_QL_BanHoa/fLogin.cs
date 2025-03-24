@@ -27,12 +27,10 @@ namespace PM_QL_BanHoa
         private void btnLogin_Click(object sender, EventArgs e)
         {
             fTableManager f = new fTableManager();
-            DataProvider provider = new DataProvider();
             string Username = txtUserName.Text;
             string Password = txtPassword.Text;
-            string query = $"SELECT * FROM dbo.NhanVien WHERE TenDangNhap = '{ Username}' AND MatKhau = '{Password}'";
-            DataTable data = provider.ExecuteQuery(query);
-            if (data.Rows.Count>0)
+            
+            if (Login(Username, Password))
             {
                 this.Hide();
                 f.ShowDialog();
@@ -40,8 +38,12 @@ namespace PM_QL_BanHoa
             }
             else
             {
-                MessageBox.Show("Dang nhap that bai");
+                MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
+        }
+        private bool Login(string username, string password)
+        {
+            return AccountDAO.Instance.Login(username,password);
         }
 
         private void fLogin_FormClosing(object sender, FormClosingEventArgs e)

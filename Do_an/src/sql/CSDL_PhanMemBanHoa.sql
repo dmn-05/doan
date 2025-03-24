@@ -29,7 +29,8 @@ CREATE TABLE NhanVien (
     SoDienThoai VARCHAR(15) UNIQUE NOT NULL,
     Email VARCHAR(100) UNIQUE NOT NULL,
     DiaChi NVARCHAR(255) NOT NULL,
-    ChucVu NVARCHAR(50) NOT NULL
+    ChucVu NVARCHAR(50) NOT NULL,
+	TrangThai INT NOT NULL
 );
 
 -- Bảng Hóa đơn
@@ -63,3 +64,21 @@ CREATE TABLE NhapHang (
     SoLuong INT CHECK (SoLuong > 0) NOT NULL,
     FOREIGN KEY (MaSP) REFERENCES SanPham(MaSP)
 );
+GO
+INSERT INTO NhanVien (TenNV, TenDangNhap, MatKhau, SoDienThoai, Email, DiaChi, ChucVu, TrangThai)
+VALUES (N'Đỗ Minh Nhật', 'admin', '123', '03306231316', '0306231316@caothang.edu.vn', N'Bình Phước', N'Quản Lý', 1)
+GO
+CREATE PROC USP_GetAccountByUserName
+@username NVARCHAR(100)
+AS
+BEGIN
+	SELECT * FROM NHANVIEN WHERE TenDangNhap = @username
+END
+GO
+CREATE PROC USP_Login
+@username NVARCHAR(100), @password NVARCHAR(100)
+AS
+BEGIN
+	SELECT * FROM NHANVIEN WHERE TenDangNhap = @username AND MatKhau = @password
+END
+select * from NhanVien where TenDangNhap = '' and MatKhau = N'' or 1=1--'

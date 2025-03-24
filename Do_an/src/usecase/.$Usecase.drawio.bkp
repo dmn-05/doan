@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
   <diagram name="Page-1" id="F_bl2N8eSsj7aJy99ByN">
-    <mxGraphModel dx="1000" dy="1691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1050" dy="1721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -537,20 +537,11 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="je81oIFqOfg3Zf1E2vGL-2" value="Include" style="endArrow=classic;dashed=1;html=1;rounded=0;endFill=1;" parent="1" source="1cnDnwMwc_Qfs5VOHH6G-4" target="1cnDnwMwc_Qfs5VOHH6G-3" edge="1">
+        <mxCell id="je81oIFqOfg3Zf1E2vGL-2" value="Include" style="endArrow=classic;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1" source="1cnDnwMwc_Qfs5VOHH6G-4" target="1cnDnwMwc_Qfs5VOHH6G-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="850" y="220" as="sourcePoint" />
             <mxPoint x="900" y="170" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="3aNjrvwN0kVDYGxAkbnn-3" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3aNjrvwN0kVDYGxAkbnn-1" target="3aNjrvwN0kVDYGxAkbnn-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="3aNjrvwN0kVDYGxAkbnn-1" value="Khách hàng" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="480" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="3aNjrvwN0kVDYGxAkbnn-2" value="Mua hàng" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="840" y="471" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
