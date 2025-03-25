@@ -16,6 +16,7 @@ CREATE TABLE KhachHang (
 CREATE TABLE SanPham (
     MaSP INT PRIMARY KEY IDENTITY NOT NULL,
     TenSP NVARCHAR(100) NOT NULL,
+	DonGia MONEY NOT NULL,
     LoaiSP NVARCHAR(50) NOT NULL,
     SoLuongTonKho INT CHECK (SoLuongTonKho >= 0) NOT NULL
 );
@@ -64,6 +65,14 @@ CREATE TABLE NhapHang (
     SoLuong INT CHECK (SoLuong > 0) NOT NULL,
     FOREIGN KEY (MaSP) REFERENCES SanPham(MaSP)
 );
+-- Bảng xuất hàng
+CREATE TABLE XuatHang (
+    MaHDXuat INT PRIMARY KEY IDENTITY NOT NULL,
+    NgayXuat DATETIME DEFAULT GETDATE(),
+    MaSP INT NOT NULL,
+    SoLuong INT CHECK (SoLuong > 0) NOT NULL,
+    FOREIGN KEY (MaSP) REFERENCES SanPham(MaSP)
+);
 GO
 INSERT INTO NhanVien (TenNV, TenDangNhap, MatKhau, SoDienThoai, Email, DiaChi, ChucVu, TrangThai)
 VALUES (N'Đỗ Minh Nhật', 'admin', '123', '03306231316', '0306231316@caothang.edu.vn', N'Bình Phước', N'Quản Lý', 1)
@@ -81,4 +90,3 @@ AS
 BEGIN
 	SELECT * FROM NHANVIEN WHERE TenDangNhap = @username AND MatKhau = @password
 END
-select * from NhanVien where TenDangNhap = '' and MatKhau = N'' or 1=1--'

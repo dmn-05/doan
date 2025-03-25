@@ -53,5 +53,17 @@ namespace PM_QL_BanHoa
                 e.Cancel = true;
             }
         }
+
+        private void chkShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShowPass.Checked == true)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

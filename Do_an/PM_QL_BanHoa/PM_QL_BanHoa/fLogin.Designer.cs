@@ -37,6 +37,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.chkShowPass = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -44,19 +45,20 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.chkShowPass);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(538, 187);
+            this.panel1.Size = new System.Drawing.Size(538, 225);
             this.panel1.TabIndex = 0;
             // 
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(401, 135);
+            this.btnExit.Location = new System.Drawing.Point(401, 173);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(115, 38);
             this.btnExit.TabIndex = 7;
@@ -66,7 +68,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(267, 135);
+            this.btnLogin.Location = new System.Drawing.Point(267, 173);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(115, 38);
             this.btnLogin.TabIndex = 6;
@@ -129,6 +131,17 @@
             this.lblUserName.TabIndex = 0;
             this.lblUserName.Text = "Tên đăng nhập:";
             // 
+            // chkShowPass
+            // 
+            this.chkShowPass.AutoSize = true;
+            this.chkShowPass.Location = new System.Drawing.Point(410, 141);
+            this.chkShowPass.Name = "chkShowPass";
+            this.chkShowPass.Size = new System.Drawing.Size(114, 20);
+            this.chkShowPass.TabIndex = 8;
+            this.chkShowPass.Text = "Hiện mật khẩu";
+            this.chkShowPass.UseVisualStyleBackColor = true;
+            this.chkShowPass.CheckedChanged += new System.EventHandler(this.chkShowPass_CheckedChanged);
+            // 
             // fLogin
             // 
             this.AcceptButton = this.btnLogin;
@@ -136,13 +149,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(562, 211);
+            this.ClientSize = new System.Drawing.Size(562, 253);
             this.Controls.Add(this.panel1);
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -162,6 +176,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.CheckBox chkShowPass;
     }
 }
 

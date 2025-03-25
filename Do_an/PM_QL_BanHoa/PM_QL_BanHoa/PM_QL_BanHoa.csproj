@@ -66,6 +66,12 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQLNV.Designer.cs">
+      <DependentUpon>fQLNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="fTableManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,25 +83,32 @@
     <EmbeddedResource Include="fAccountProfile.resx">
       <DependentUpon>fAccountProfile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fAdmin.resx">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQLNV.resx">
+      <DependentUpon>fQLNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -107,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhanVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhanVien1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
