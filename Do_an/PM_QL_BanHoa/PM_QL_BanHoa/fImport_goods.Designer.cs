@@ -1,6 +1,6 @@
 ﻿namespace PM_QL_BanHoa
 {
-    partial class fQLNV
+    partial class fImport_goods
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // fQLNV
+            // fImport_goods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 738);
-            this.Name = "fQLNV";
-            this.Text = "fQLNV";
+            this.Name = "fImport_goods";
+            this.Text = "fImport_goods";
             this.ResumeLayout(false);
 
         }

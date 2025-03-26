@@ -16,7 +16,7 @@ namespace PM_QL_BanHoa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fLogin());
+            Application.Run(new fAdmin());
         }
     }
 }

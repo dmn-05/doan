@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PM_QL_BanHoa
 {
-    public partial class fQLNV : Form
+    public partial class fProduct : Form
     {
-        public fQLNV()
+        public fProduct()
         {
             InitializeComponent();
         }

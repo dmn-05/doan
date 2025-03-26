@@ -10,33 +10,14 @@ using System.Windows.Forms;
 
 namespace PM_QL_BanHoa
 {
-    public partial class fAdmin : Form
+    public partial class fEmployee : Form
     {
-        public fAdmin()
+        public fEmployee()
         {
             InitializeComponent();
         }
 
-        private void picQLSP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fAdmin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picQLNV_Click(object sender, EventArgs e)
-        {
-            fEmployee f = new fEmployee();
-
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-        }
-
-        private void fAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        private void fQLNV_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
             {
