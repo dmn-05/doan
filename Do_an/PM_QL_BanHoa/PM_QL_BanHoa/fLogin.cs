@@ -26,7 +26,7 @@ namespace PM_QL_BanHoa
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            fTableManager f = new fTableManager();
+            fAdmin f = new fAdmin();
             string Username = txtUserName.Text;
             string Password = txtPassword.Text;
             

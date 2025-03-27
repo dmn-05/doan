@@ -19,7 +19,6 @@ CREATE TABLE SanPham (
 	GiaBanLe DECIMAL(18,2) NOT NULL,
 	GiaNhap DECIMAL(18,2) NOT NULL,
 	GiaXuat DECIMAL(18,2) NOT NULL,
-    LoaiSP NVARCHAR(50) NOT NULL,
     SoLuongTonKho INT CHECK (SoLuongTonKho >= 0) NOT NULL
 );
 
@@ -79,7 +78,28 @@ CREATE TABLE XuatHang (
 );
 GO
 INSERT INTO NhanVien (TenNV, TenDangNhap, MatKhau, SoDienThoai, Email, DiaChi, ChucVu, TrangThai)
-VALUES (N'Đỗ Minh Nhật', 'admin', '123', '03306231316', '0306231316@caothang.edu.vn', N'Bình Phước', N'Quản Lý', 1)
+VALUES 
+(N'Đỗ Minh Nhật', 'admin', '123', '03306231316', '0306231316@caothang.edu.vn', N'Bình Phước', N'Quản Lý', 1),
+(N'Bùi Minh Quân', 'bmquan', '123', '03306231328', '0306231328@caothang.edu.vn', N'TP HCM', N'Giám Đốc', 1),
+(N'Đỗ Quốc Trung', 'dqtrung', '123', '03306231346', '0306231346@caothang.edu.vn', N'Bình Thuận', N'Phó Giám Đốc', 1),
+(N'Đỗ Ngọc Thế', 'dnthe', '123', '03306231335', '0306231335@caothang.edu.vn', N'Cà Mau', N'Nhân Viên', 1),
+(N'Nguyễn Thái Nguyên', 'ntnguyen', '123', '03306231313', '0306231313@caothang.edu.vn', N'Long An', N'Bảo Vệ', 1);
+GO
+INSERT INTO KhachHang (TenKH, SoDienThoai, Email, DiaChi)
+VALUES 
+    (N'Nguyễn Vương Anh', '0987654321', 'nva@example.com', N'123 Đường Hoàng Văn Thụ, Hà Nội'),
+    (N'Trần Thị Bình', '0978123456', 'ttb@example.com', N'456 Đường Nguyễn Văn Sỹ, TP.HCM'),
+    (N'Lê Văn Chiến', '0912233445', 'lvc@example.com', N'789 Đường Đoàn Thị Điểm, Đà Nẵng'),
+    (N'Phạm Thị Dung', '0905566778', 'ptd@example.com', N'321 Đường Hai Bà Trưng, Hải Phòng'),
+    (N'Hoàng Văn Minh', '0923344556', 'hvm@example.com', N'654 Đường Ngô Quyền, Cần Thơ');
+GO
+INSERT INTO SanPham (TenSP, GiaBanLe, GiaNhap, GiaXuat, SoLuongTonKho)
+VALUES 
+    (N'Hoa Hồng', 50000, 30000, 40000, 100),
+    (N'Hoa Cúc', 30000, 15000, 20000, 150),
+    (N'Hoa Lan', 120000, 80000, 100000, 50),
+    (N'Hoa Ly', 90000, 60000, 75000, 70),
+    (N'Hoa Tulip', 150000, 110000, 130000, 30);
 GO
 CREATE PROC USP_GetAccountByUserName
 @username NVARCHAR(100)

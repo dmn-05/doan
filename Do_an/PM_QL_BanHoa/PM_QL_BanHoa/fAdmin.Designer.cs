@@ -28,107 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
-            this.picThongKe = new System.Windows.Forms.PictureBox();
-            this.picQLNK = new System.Windows.Forms.PictureBox();
-            this.picQLSP = new System.Windows.Forms.PictureBox();
-            this.picQLKH = new System.Windows.Forms.PictureBox();
-            this.picQLHD = new System.Windows.Forms.PictureBox();
-            this.picQLNV = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picThongKe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLNK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLSP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLKH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLHD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLNV)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // picThongKe
-            // 
-            this.picThongKe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picThongKe.BackgroundImage")));
-            this.picThongKe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picThongKe.Location = new System.Drawing.Point(846, 358);
-            this.picThongKe.Name = "picThongKe";
-            this.picThongKe.Size = new System.Drawing.Size(300, 250);
-            this.picThongKe.TabIndex = 8;
-            this.picThongKe.TabStop = false;
-            // 
-            // picQLNK
-            // 
-            this.picQLNK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLNK.BackgroundImage")));
-            this.picQLNK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picQLNK.Location = new System.Drawing.Point(103, 358);
-            this.picQLNK.Name = "picQLNK";
-            this.picQLNK.Size = new System.Drawing.Size(300, 250);
-            this.picQLNK.TabIndex = 5;
-            this.picQLNK.TabStop = false;
-            // 
-            // picQLSP
-            // 
-            this.picQLSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLSP.BackgroundImage")));
-            this.picQLSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picQLSP.Location = new System.Drawing.Point(476, 52);
-            this.picQLSP.Name = "picQLSP";
-            this.picQLSP.Size = new System.Drawing.Size(300, 250);
-            this.picQLSP.TabIndex = 4;
-            this.picQLSP.TabStop = false;
-            this.picQLSP.Click += new System.EventHandler(this.picQLSP_Click);
-            // 
-            // picQLKH
-            // 
-            this.picQLKH.BackColor = System.Drawing.SystemColors.Control;
-            this.picQLKH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLKH.BackgroundImage")));
-            this.picQLKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picQLKH.Location = new System.Drawing.Point(846, 52);
-            this.picQLKH.Name = "picQLKH";
-            this.picQLKH.Size = new System.Drawing.Size(300, 250);
-            this.picQLKH.TabIndex = 3;
-            this.picQLKH.TabStop = false;
-            // 
-            // picQLHD
-            // 
-            this.picQLHD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLHD.BackgroundImage")));
-            this.picQLHD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picQLHD.Location = new System.Drawing.Point(476, 358);
-            this.picQLHD.Name = "picQLHD";
-            this.picQLHD.Size = new System.Drawing.Size(300, 250);
-            this.picQLHD.TabIndex = 2;
-            this.picQLHD.TabStop = false;
-            // 
-            // picQLNV
-            // 
-            this.picQLNV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLNV.BackgroundImage")));
-            this.picQLNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picQLNV.Location = new System.Drawing.Point(103, 52);
-            this.picQLNV.Name = "picQLNV";
-            this.picQLNV.Size = new System.Drawing.Size(300, 250);
-            this.picQLNV.TabIndex = 1;
-            this.picQLNV.TabStop = false;
-            this.picQLNV.Click += new System.EventHandler(this.picQLNV_Click);
-            // 
-            // fAdmin
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 659);
-            this.Controls.Add(this.picThongKe);
-            this.Controls.Add(this.picQLNK);
-            this.Controls.Add(this.picQLSP);
-            this.Controls.Add(this.picQLKH);
-            this.Controls.Add(this.picQLHD);
-            this.Controls.Add(this.picQLNV);
-            this.Name = "fAdmin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fAdmin";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fAdmin_FormClosing);
-            this.Load += new System.EventHandler(this.fAdmin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picThongKe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLNK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLSP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLKH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLHD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQLNV)).EndInit();
-            this.ResumeLayout(false);
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
+      this.picThongKe = new System.Windows.Forms.PictureBox();
+      this.picQLNK = new System.Windows.Forms.PictureBox();
+      this.picQLSP = new System.Windows.Forms.PictureBox();
+      this.picQLKH = new System.Windows.Forms.PictureBox();
+      this.picQLHD = new System.Windows.Forms.PictureBox();
+      this.picQLNV = new System.Windows.Forms.PictureBox();
+      this.pictureBox1 = new System.Windows.Forms.PictureBox();
+      this.pictureBox2 = new System.Windows.Forms.PictureBox();
+      ((System.ComponentModel.ISupportInitialize)(this.picThongKe)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLNK)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLSP)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLKH)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLHD)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLNV)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+      this.SuspendLayout();
+      // 
+      // picThongKe
+      // 
+      this.picThongKe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picThongKe.BackgroundImage")));
+      this.picThongKe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picThongKe.Location = new System.Drawing.Point(638, 358);
+      this.picThongKe.Name = "picThongKe";
+      this.picThongKe.Size = new System.Drawing.Size(200, 200);
+      this.picThongKe.TabIndex = 8;
+      this.picThongKe.TabStop = false;
+      // 
+      // picQLNK
+      // 
+      this.picQLNK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLNK.BackgroundImage")));
+      this.picQLNK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picQLNK.Location = new System.Drawing.Point(104, 358);
+      this.picQLNK.Name = "picQLNK";
+      this.picQLNK.Size = new System.Drawing.Size(200, 200);
+      this.picQLNK.TabIndex = 5;
+      this.picQLNK.TabStop = false;
+      // 
+      // picQLSP
+      // 
+      this.picQLSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLSP.BackgroundImage")));
+      this.picQLSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picQLSP.Location = new System.Drawing.Point(366, 52);
+      this.picQLSP.Name = "picQLSP";
+      this.picQLSP.Size = new System.Drawing.Size(200, 200);
+      this.picQLSP.TabIndex = 4;
+      this.picQLSP.TabStop = false;
+      this.picQLSP.Click += new System.EventHandler(this.picQLSP_Click);
+      // 
+      // picQLKH
+      // 
+      this.picQLKH.BackColor = System.Drawing.SystemColors.Control;
+      this.picQLKH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLKH.BackgroundImage")));
+      this.picQLKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picQLKH.Location = new System.Drawing.Point(638, 52);
+      this.picQLKH.Name = "picQLKH";
+      this.picQLKH.Size = new System.Drawing.Size(200, 200);
+      this.picQLKH.TabIndex = 3;
+      this.picQLKH.TabStop = false;
+      // 
+      // picQLHD
+      // 
+      this.picQLHD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLHD.BackgroundImage")));
+      this.picQLHD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picQLHD.Location = new System.Drawing.Point(366, 358);
+      this.picQLHD.Name = "picQLHD";
+      this.picQLHD.Size = new System.Drawing.Size(200, 200);
+      this.picQLHD.TabIndex = 2;
+      this.picQLHD.TabStop = false;
+      // 
+      // picQLNV
+      // 
+      this.picQLNV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLNV.BackgroundImage")));
+      this.picQLNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picQLNV.Location = new System.Drawing.Point(104, 52);
+      this.picQLNV.Name = "picQLNV";
+      this.picQLNV.Size = new System.Drawing.Size(200, 200);
+      this.picQLNV.TabIndex = 1;
+      this.picQLNV.TabStop = false;
+      this.picQLNV.Click += new System.EventHandler(this.picQLNV_Click);
+      // 
+      // pictureBox1
+      // 
+      this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+      this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.pictureBox1.Location = new System.Drawing.Point(908, 358);
+      this.pictureBox1.Name = "pictureBox1";
+      this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+      this.pictureBox1.TabIndex = 10;
+      this.pictureBox1.TabStop = false;
+      // 
+      // pictureBox2
+      // 
+      this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
+      this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+      this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.pictureBox2.Location = new System.Drawing.Point(908, 52);
+      this.pictureBox2.Name = "pictureBox2";
+      this.pictureBox2.Size = new System.Drawing.Size(200, 200);
+      this.pictureBox2.TabIndex = 9;
+      this.pictureBox2.TabStop = false;
+      // 
+      // fAdmin
+      // 
+      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.ClientSize = new System.Drawing.Size(1244, 659);
+      this.Controls.Add(this.pictureBox1);
+      this.Controls.Add(this.pictureBox2);
+      this.Controls.Add(this.picThongKe);
+      this.Controls.Add(this.picQLNK);
+      this.Controls.Add(this.picQLSP);
+      this.Controls.Add(this.picQLKH);
+      this.Controls.Add(this.picQLHD);
+      this.Controls.Add(this.picQLNV);
+      this.Name = "fAdmin";
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+      this.Text = "fAdmin";
+      this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fAdmin_FormClosing);
+      this.Load += new System.EventHandler(this.fAdmin_Load);
+      ((System.ComponentModel.ISupportInitialize)(this.picThongKe)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLNK)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLSP)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLKH)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLHD)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picQLNV)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+      this.ResumeLayout(false);
 
         }
 
@@ -139,5 +168,7 @@
         private System.Windows.Forms.PictureBox picQLNK;
         private System.Windows.Forms.PictureBox picThongKe;
         private System.Windows.Forms.PictureBox picQLNV;
-    }
+    private System.Windows.Forms.PictureBox pictureBox1;
+    private System.Windows.Forms.PictureBox pictureBox2;
+  }
 }

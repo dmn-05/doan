@@ -11,7 +11,7 @@ namespace PM_QL_BanHoa.DAO
 {
     public class DataProvider
     {
-        private string ConnectionSTR = "Data Source=LAPTOP-F8I3O6B7\\SQLEXPRESS01;Initial Catalog=QuanLyBanHang;Integrated Security=True";
+        private string ConnectionSTR = "Data Source=.\\SQLEXPRESS01;Initial Catalog=QuanLyBanHang;Integrated Security=True";
         private static DataProvider instance;
 
         public static DataProvider Instance {

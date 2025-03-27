@@ -11,4 +11,8 @@ D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.p
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fAccountProfile.resources
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fTableManager.resources
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fAdmin.resources
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fQLNV.resources
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fCustomer.resources
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fImport_goods.resources
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fInvoice.resources
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fEmployee.resources
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fProduct.resources
