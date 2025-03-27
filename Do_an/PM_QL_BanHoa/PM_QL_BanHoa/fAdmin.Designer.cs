@@ -29,146 +29,152 @@
         private void InitializeComponent()
         {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
-      this.picThongKe = new System.Windows.Forms.PictureBox();
-      this.picQLNK = new System.Windows.Forms.PictureBox();
-      this.picQLSP = new System.Windows.Forms.PictureBox();
-      this.picQLKH = new System.Windows.Forms.PictureBox();
-      this.picQLHD = new System.Windows.Forms.PictureBox();
-      this.picQLNV = new System.Windows.Forms.PictureBox();
-      this.pictureBox1 = new System.Windows.Forms.PictureBox();
-      this.pictureBox2 = new System.Windows.Forms.PictureBox();
-      ((System.ComponentModel.ISupportInitialize)(this.picThongKe)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLNK)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLSP)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLKH)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLHD)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLNV)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+      this.picStatistics = new System.Windows.Forms.PictureBox();
+      this.picImport_goods = new System.Windows.Forms.PictureBox();
+      this.picProduct = new System.Windows.Forms.PictureBox();
+      this.picCustomer = new System.Windows.Forms.PictureBox();
+      this.picInvoice = new System.Windows.Forms.PictureBox();
+      this.picEmployee = new System.Windows.Forms.PictureBox();
+      this.picInvoice_details = new System.Windows.Forms.PictureBox();
+      this.picExport_goods = new System.Windows.Forms.PictureBox();
+      ((System.ComponentModel.ISupportInitialize)(this.picStatistics)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picImport_goods)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picProduct)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picInvoice)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picEmployee)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picInvoice_details)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picExport_goods)).BeginInit();
       this.SuspendLayout();
       // 
-      // picThongKe
+      // picStatistics
       // 
-      this.picThongKe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picThongKe.BackgroundImage")));
-      this.picThongKe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.picThongKe.Location = new System.Drawing.Point(638, 358);
-      this.picThongKe.Name = "picThongKe";
-      this.picThongKe.Size = new System.Drawing.Size(200, 200);
-      this.picThongKe.TabIndex = 8;
-      this.picThongKe.TabStop = false;
+      this.picStatistics.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picStatistics.BackgroundImage")));
+      this.picStatistics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picStatistics.Location = new System.Drawing.Point(917, 358);
+      this.picStatistics.Name = "picStatistics";
+      this.picStatistics.Size = new System.Drawing.Size(200, 200);
+      this.picStatistics.TabIndex = 8;
+      this.picStatistics.TabStop = false;
+      this.picStatistics.Click += new System.EventHandler(this.picStatistics_Click);
       // 
-      // picQLNK
+      // picImport_goods
       // 
-      this.picQLNK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLNK.BackgroundImage")));
-      this.picQLNK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.picQLNK.Location = new System.Drawing.Point(104, 358);
-      this.picQLNK.Name = "picQLNK";
-      this.picQLNK.Size = new System.Drawing.Size(200, 200);
-      this.picQLNK.TabIndex = 5;
-      this.picQLNK.TabStop = false;
+      this.picImport_goods.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picImport_goods.BackgroundImage")));
+      this.picImport_goods.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picImport_goods.Location = new System.Drawing.Point(366, 358);
+      this.picImport_goods.Name = "picImport_goods";
+      this.picImport_goods.Size = new System.Drawing.Size(200, 200);
+      this.picImport_goods.TabIndex = 5;
+      this.picImport_goods.TabStop = false;
+      this.picImport_goods.Click += new System.EventHandler(this.picImport_goods_Click);
       // 
-      // picQLSP
+      // picProduct
       // 
-      this.picQLSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLSP.BackgroundImage")));
-      this.picQLSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.picQLSP.Location = new System.Drawing.Point(366, 52);
-      this.picQLSP.Name = "picQLSP";
-      this.picQLSP.Size = new System.Drawing.Size(200, 200);
-      this.picQLSP.TabIndex = 4;
-      this.picQLSP.TabStop = false;
-      this.picQLSP.Click += new System.EventHandler(this.picQLSP_Click);
+      this.picProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picProduct.BackgroundImage")));
+      this.picProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picProduct.Location = new System.Drawing.Point(366, 52);
+      this.picProduct.Name = "picProduct";
+      this.picProduct.Size = new System.Drawing.Size(200, 200);
+      this.picProduct.TabIndex = 4;
+      this.picProduct.TabStop = false;
+      this.picProduct.Click += new System.EventHandler(this.picQLSP_Click);
       // 
-      // picQLKH
+      // picCustomer
       // 
-      this.picQLKH.BackColor = System.Drawing.SystemColors.Control;
-      this.picQLKH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLKH.BackgroundImage")));
-      this.picQLKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.picQLKH.Location = new System.Drawing.Point(638, 52);
-      this.picQLKH.Name = "picQLKH";
-      this.picQLKH.Size = new System.Drawing.Size(200, 200);
-      this.picQLKH.TabIndex = 3;
-      this.picQLKH.TabStop = false;
+      this.picCustomer.BackColor = System.Drawing.SystemColors.Control;
+      this.picCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picCustomer.BackgroundImage")));
+      this.picCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picCustomer.Location = new System.Drawing.Point(638, 52);
+      this.picCustomer.Name = "picCustomer";
+      this.picCustomer.Size = new System.Drawing.Size(200, 200);
+      this.picCustomer.TabIndex = 3;
+      this.picCustomer.TabStop = false;
+      this.picCustomer.Click += new System.EventHandler(this.picCustomer_Click);
       // 
-      // picQLHD
+      // picInvoice
       // 
-      this.picQLHD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLHD.BackgroundImage")));
-      this.picQLHD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.picQLHD.Location = new System.Drawing.Point(366, 358);
-      this.picQLHD.Name = "picQLHD";
-      this.picQLHD.Size = new System.Drawing.Size(200, 200);
-      this.picQLHD.TabIndex = 2;
-      this.picQLHD.TabStop = false;
+      this.picInvoice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picInvoice.BackgroundImage")));
+      this.picInvoice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picInvoice.Location = new System.Drawing.Point(917, 52);
+      this.picInvoice.Name = "picInvoice";
+      this.picInvoice.Size = new System.Drawing.Size(200, 200);
+      this.picInvoice.TabIndex = 2;
+      this.picInvoice.TabStop = false;
+      this.picInvoice.Click += new System.EventHandler(this.picInvoice_Click);
       // 
-      // picQLNV
+      // picEmployee
       // 
-      this.picQLNV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picQLNV.BackgroundImage")));
-      this.picQLNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.picQLNV.Location = new System.Drawing.Point(104, 52);
-      this.picQLNV.Name = "picQLNV";
-      this.picQLNV.Size = new System.Drawing.Size(200, 200);
-      this.picQLNV.TabIndex = 1;
-      this.picQLNV.TabStop = false;
-      this.picQLNV.Click += new System.EventHandler(this.picQLNV_Click);
+      this.picEmployee.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picEmployee.BackgroundImage")));
+      this.picEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picEmployee.Location = new System.Drawing.Point(104, 52);
+      this.picEmployee.Name = "picEmployee";
+      this.picEmployee.Size = new System.Drawing.Size(200, 200);
+      this.picEmployee.TabIndex = 1;
+      this.picEmployee.TabStop = false;
+      this.picEmployee.Click += new System.EventHandler(this.picEmployee_Click);
       // 
-      // pictureBox1
+      // picInvoice_details
       // 
-      this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-      this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.pictureBox1.Location = new System.Drawing.Point(908, 358);
-      this.pictureBox1.Name = "pictureBox1";
-      this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-      this.pictureBox1.TabIndex = 10;
-      this.pictureBox1.TabStop = false;
+      this.picInvoice_details.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picInvoice_details.BackgroundImage")));
+      this.picInvoice_details.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picInvoice_details.Location = new System.Drawing.Point(104, 358);
+      this.picInvoice_details.Name = "picInvoice_details";
+      this.picInvoice_details.Size = new System.Drawing.Size(200, 200);
+      this.picInvoice_details.TabIndex = 10;
+      this.picInvoice_details.TabStop = false;
+      this.picInvoice_details.Click += new System.EventHandler(this.picInvoice_details_Click);
       // 
-      // pictureBox2
+      // picExport_goods
       // 
-      this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-      this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-      this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-      this.pictureBox2.Location = new System.Drawing.Point(908, 52);
-      this.pictureBox2.Name = "pictureBox2";
-      this.pictureBox2.Size = new System.Drawing.Size(200, 200);
-      this.pictureBox2.TabIndex = 9;
-      this.pictureBox2.TabStop = false;
+      this.picExport_goods.BackColor = System.Drawing.SystemColors.Control;
+      this.picExport_goods.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picExport_goods.BackgroundImage")));
+      this.picExport_goods.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+      this.picExport_goods.Location = new System.Drawing.Point(638, 358);
+      this.picExport_goods.Name = "picExport_goods";
+      this.picExport_goods.Size = new System.Drawing.Size(200, 200);
+      this.picExport_goods.TabIndex = 9;
+      this.picExport_goods.TabStop = false;
+      this.picExport_goods.Click += new System.EventHandler(this.picExport_goods_Click);
       // 
       // fAdmin
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1244, 659);
-      this.Controls.Add(this.pictureBox1);
-      this.Controls.Add(this.pictureBox2);
-      this.Controls.Add(this.picThongKe);
-      this.Controls.Add(this.picQLNK);
-      this.Controls.Add(this.picQLSP);
-      this.Controls.Add(this.picQLKH);
-      this.Controls.Add(this.picQLHD);
-      this.Controls.Add(this.picQLNV);
+      this.Controls.Add(this.picInvoice_details);
+      this.Controls.Add(this.picExport_goods);
+      this.Controls.Add(this.picStatistics);
+      this.Controls.Add(this.picImport_goods);
+      this.Controls.Add(this.picProduct);
+      this.Controls.Add(this.picCustomer);
+      this.Controls.Add(this.picInvoice);
+      this.Controls.Add(this.picEmployee);
       this.Name = "fAdmin";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "fAdmin";
       this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fAdmin_FormClosing);
       this.Load += new System.EventHandler(this.fAdmin_Load);
-      ((System.ComponentModel.ISupportInitialize)(this.picThongKe)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLNK)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLSP)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLKH)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLHD)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.picQLNV)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picStatistics)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picImport_goods)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picProduct)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picInvoice)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picEmployee)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picInvoice_details)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.picExport_goods)).EndInit();
       this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox picQLHD;
-        private System.Windows.Forms.PictureBox picQLKH;
-        private System.Windows.Forms.PictureBox picQLSP;
-        private System.Windows.Forms.PictureBox picQLNK;
-        private System.Windows.Forms.PictureBox picThongKe;
-        private System.Windows.Forms.PictureBox picQLNV;
-    private System.Windows.Forms.PictureBox pictureBox1;
-    private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picInvoice;
+        private System.Windows.Forms.PictureBox picCustomer;
+        private System.Windows.Forms.PictureBox picProduct;
+        private System.Windows.Forms.PictureBox picImport_goods;
+        private System.Windows.Forms.PictureBox picStatistics;
+        private System.Windows.Forms.PictureBox picEmployee;
+    private System.Windows.Forms.PictureBox picInvoice_details;
+    private System.Windows.Forms.PictureBox picExport_goods;
   }
 }

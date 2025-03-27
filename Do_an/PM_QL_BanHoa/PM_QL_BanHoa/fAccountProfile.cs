@@ -8,13 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PM_QL_BanHoa
-{
-    public partial class fAccountProfile : Form
-    {
-        public fAccountProfile()
-        {
-            InitializeComponent();
-        }
+namespace PM_QL_BanHoa {
+  public partial class fAccountProfile : Form {
+    public fAccountProfile() {
+      InitializeComponent();
     }
+  }
 }

@@ -8,13 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PM_QL_BanHoa
-{
-    public partial class fProduct : Form
-    {
-        public fProduct()
-        {
-            InitializeComponent();
-        }
+namespace PM_QL_BanHoa {
+  public partial class fProduct : Form {
+    public fProduct() {
+      InitializeComponent();
     }
+  }
 }

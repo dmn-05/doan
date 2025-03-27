@@ -8,20 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PM_QL_BanHoa
-{
-    public partial class fTableManager : Form
-    {
-        public fTableManager()
-        {
-            InitializeComponent();
-        }
-
-        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            fAccountProfile f = new fAccountProfile();
-            f.ShowDialog();
-        }
+namespace PM_QL_BanHoa {
+  public partial class fTableManager : Form {
+    public fTableManager() {
+      InitializeComponent();
     }
+
+    private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e) {
+      this.Close();
+      fAccountProfile f = new fAccountProfile();
+      f.ShowDialog();
+    }
+  }
 }

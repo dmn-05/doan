@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PM_QL_BanHoa
-{
-    public partial class fInvoice : Form
-    {
-        public fInvoice()
-        {
-            InitializeComponent();
-        }
-
-        private void fInvoice_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
-            {
-                e.Cancel = true;
-            }
-        }
+namespace PM_QL_BanHoa {
+  public partial class fInvoice : Form {
+    public fInvoice() {
+      InitializeComponent();
     }
+
+    private void fInvoice_FormClosing(object sender, FormClosingEventArgs e) {
+      if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
+        e.Cancel = true;
+      }
+    }
+  }
 }

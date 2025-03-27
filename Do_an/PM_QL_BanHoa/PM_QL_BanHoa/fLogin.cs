@@ -10,60 +10,45 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PM_QL_BanHoa
-{
-    public partial class fLogin : Form
-    {
-        public fLogin()
-        {
-            InitializeComponent();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            fAdmin f = new fAdmin();
-            string Username = txtUserName.Text;
-            string Password = txtPassword.Text;
-            
-            if (Login(Username, Password))
-            {
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
-            }
-        }
-        private bool Login(string username, string password)
-        {
-            return AccountDAO.Instance.Login(username,password);
-        }
-
-        private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn thoát chương trình","Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
-            {
-                e.Cancel = true;
-            }
-        }
-
-        private void chkShowPass_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkShowPass.Checked == true)
-            {
-                txtPassword.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtPassword.UseSystemPasswordChar = true;
-            }
-        }
+namespace PM_QL_BanHoa {
+  public partial class fLogin : Form {
+    public fLogin() {
+      InitializeComponent();
     }
+
+    private void btnExit_Click(object sender, EventArgs e) {
+      Application.Exit();
+    }
+
+    private void btnLogin_Click(object sender, EventArgs e) {
+      fAdmin f = new fAdmin();
+      string Username = txtUserName.Text;
+      string Password = txtPassword.Text;
+
+      if (Login(Username, Password)) {
+        this.Hide();
+        f.ShowDialog();
+        this.Show();
+      } else {
+        MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+      }
+    }
+    private bool Login(string username, string password) {
+      return AccountDAO.Instance.Login(username, password);
+    }
+
+    private void fLogin_FormClosing(object sender, FormClosingEventArgs e) {
+      if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
+        e.Cancel = true;
+      }
+    }
+
+    private void chkShowPass_CheckedChanged(object sender, EventArgs e) {
+      if (chkShowPass.Checked == true) {
+        txtPassword.UseSystemPasswordChar = false;
+      } else {
+        txtPassword.UseSystemPasswordChar = true;
+      }
+    }
+  }
 }
