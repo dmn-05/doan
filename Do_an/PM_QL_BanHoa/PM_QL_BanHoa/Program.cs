@@ -13,7 +13,7 @@ namespace PM_QL_BanHoa {
     static void Main() {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new fEmployee());
+      Application.Run(new fLogin());
     }
   }
 }

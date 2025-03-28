@@ -29,8 +29,7 @@ namespace PM_QL_BanHoa {
     private void fEmployee_Load(object sender, EventArgs e) {
       dgvEmployee.AutoGenerateColumns = false;
       daNV = new SqlDataAdapter("Select * From NhanVien Where TrangThai = 1", strKetNoi);
-      SqlCommandBuilder scb = new SqlCommandBuilder(daNV);// dataAdapter sinh viên có thể cập nhật dữ liệu
-      //Tuỳ chỉnh lại lệnh insert cho dataAdapter Sinh viên khi thêm vào trạng thái = 1
+      SqlCommandBuilder scb = new SqlCommandBuilder(daNV);
       SqlCommand insCommand = new SqlCommand();
       insCommand.CommandText = "INSERT INTO NhanVien (TenNV, TenDangNhap, MatKhau, SoDienThoai, Email, DiaChi, ChucVu, TrangThai) VALUES (@TenNV, @TenDangNhap, @MatKhau, @SoDienThoai, @Email, @DiaChi, @ChucVu, 1)";
       insCommand.Parameters.Add("@TenNV", SqlDbType.NVarChar, 100, "TenNV");
@@ -44,7 +43,6 @@ namespace PM_QL_BanHoa {
       LoadDSNhanVien();
     }
     private void LoadDSNhanVien() {
-      //Kiểm tra trong bảng sinh viên của dataset, nếu có rồi thì clear để đổ dữ liệu mới
       if (dsNhanVien.Tables["NhanVien"] != null) {
         dsNhanVien.Tables["NhanVien"].Clear();
       }

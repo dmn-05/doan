@@ -25,10 +25,12 @@ namespace PM_QL_BanHoa {
       string Username = txtUserName.Text;
       string Password = txtPassword.Text;
 
-      if (Login(Username, Password)) {
+      if (Login_Admin(Username, Password)) {
         this.Hide();
         f.ShowDialog();
         this.Show();
+      } else if (Login(Username, Password)) {
+        MessageBox.Show("Đăng nhập thành công nhân viên", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
       } else {
         MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
       }
@@ -36,7 +38,9 @@ namespace PM_QL_BanHoa {
     private bool Login(string username, string password) {
       return AccountDAO.Instance.Login(username, password);
     }
-
+    private bool Login_Admin(string username, string password) {
+      return AccountDAO.Instance.Login_Admin(username, password);
+    }
     private void fLogin_FormClosing(object sender, FormClosingEventArgs e) {
       if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
         e.Cancel = true;

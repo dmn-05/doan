@@ -17,7 +17,12 @@ namespace PM_QL_BanHoa.DAO {
     }
 
     public bool Login(string username, string password) {
-      string query = "EXEC USP_Login @username , @password";
+      string query = "EXEC dbo.USP_Login @username , @password";
+      DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password });
+      return data.Rows.Count > 0;
+    }
+    public bool Login_Admin(string username, string password) {
+      string query = "EXEC dbo.USP_Login_Admin @username , @password";
       DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password });
       return data.Rows.Count > 0;
     }

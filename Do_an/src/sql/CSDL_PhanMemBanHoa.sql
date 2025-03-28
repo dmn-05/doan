@@ -87,11 +87,11 @@ VALUES
 GO
 INSERT INTO KhachHang (TenKH, SoDienThoai, Email, DiaChi)
 VALUES 
-    (N'Nguyễn Vương Anh', '0987654321', 'nva@example.com', N'123 Đường Hoàng Văn Thụ, Hà Nội'),
-    (N'Trần Thị Bình', '0978123456', 'ttb@example.com', N'456 Đường Nguyễn Văn Sỹ, TP.HCM'),
-    (N'Lê Văn Chiến', '0912233445', 'lvc@example.com', N'789 Đường Đoàn Thị Điểm, Đà Nẵng'),
-    (N'Phạm Thị Dung', '0905566778', 'ptd@example.com', N'321 Đường Hai Bà Trưng, Hải Phòng'),
-    (N'Hoàng Văn Minh', '0923344556', 'hvm@example.com', N'654 Đường Ngô Quyền, Cần Thơ');
+    (N'Nguyễn Vương Anh', '0987654321', 'nva@example.com', N'123 Phố Hoàng Văn Thụ, Phường Quán Thánh, Quận Ba Đình, TP Hà Nội'),
+    (N'Trần Thị Bình', '0978123456', 'ttb@example.com', N'456 Đường Nguyễn Văn Sỹ, Phường 14,  Quận 3, TP.Hồ Chí Minh'),
+    (N'Lê Văn Chiến', '0912233445', 'lvc@example.com', N'789 Đường Đoàn Thị Điểm, Phường Hải Châu 2, Quận Hải Châu, TP  Đà Nẵng'),
+    (N'Phạm Thị Dung', '0905566778', 'ptd@example.com', N'321 Phố Hai Bà Trưng, Cát Dài, Lê Chân, Hải Phòng'),
+    (N'Hoàng Văn Minh', '0923344556', 'hvm@example.com', N'654 Đường Ngô Quyền, Phường Tây An, Quận Ninh Kiều, TP Cần Thơ');
 GO
 INSERT INTO SanPham (TenSP, GiaBanLe, GiaNhap, GiaXuat, SoLuongTonKho)
 VALUES 
@@ -113,4 +113,11 @@ CREATE PROC USP_Login
 AS
 BEGIN
 	SELECT * FROM NHANVIEN WHERE TenDangNhap = @username AND MatKhau = @password
+END
+GO
+CREATE PROC USP_Login_Admin
+@username NVARCHAR(100), @password NVARCHAR(100)
+AS
+BEGIN
+	SELECT * FROM NHANVIEN WHERE TenDangNhap = @username AND MatKhau = @password AND ChucVu = N'Quản Lý'
 END

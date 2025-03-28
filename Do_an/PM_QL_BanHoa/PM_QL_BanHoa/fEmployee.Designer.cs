@@ -31,7 +31,6 @@
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fEmployee));
       this.groupBox1 = new System.Windows.Forms.GroupBox();
       this.dgvEmployee = new System.Windows.Forms.DataGridView();
-      this.btnSave = new System.Windows.Forms.Button();
       this.colMaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colTenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colTenDangNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,15 +40,13 @@
       this.colDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.btnSave = new System.Windows.Forms.Button();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
       this.SuspendLayout();
       // 
       // groupBox1
       // 
-      this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
       this.groupBox1.Controls.Add(this.dgvEmployee);
       this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBox1.ForeColor = System.Drawing.Color.Blue;
@@ -81,24 +78,8 @@
       this.dgvEmployee.Name = "dgvEmployee";
       this.dgvEmployee.RowHeadersWidth = 51;
       this.dgvEmployee.RowTemplate.Height = 24;
-      this.dgvEmployee.Size = new System.Drawing.Size(1137, 528);
+      this.dgvEmployee.Size = new System.Drawing.Size(1137, 566);
       this.dgvEmployee.TabIndex = 0;
-      // 
-      // btnSave
-      // 
-      this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-      this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-      this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btnSave.ForeColor = System.Drawing.Color.Black;
-      this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-      this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-      this.btnSave.Location = new System.Drawing.Point(1077, 659);
-      this.btnSave.Name = "btnSave";
-      this.btnSave.Size = new System.Drawing.Size(135, 67);
-      this.btnSave.TabIndex = 1;
-      this.btnSave.Text = "    Lưu";
-      this.btnSave.UseVisualStyleBackColor = true;
-      this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
       // 
       // colMaNV
       // 
@@ -185,6 +166,22 @@
       this.colTrangThai.MinimumWidth = 139;
       this.colTrangThai.Name = "colTrangThai";
       this.colTrangThai.Width = 139;
+      // 
+      // btnSave
+      // 
+      this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+      this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+      this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btnSave.ForeColor = System.Drawing.Color.Black;
+      this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+      this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.btnSave.Location = new System.Drawing.Point(1077, 659);
+      this.btnSave.Name = "btnSave";
+      this.btnSave.Size = new System.Drawing.Size(135, 67);
+      this.btnSave.TabIndex = 1;
+      this.btnSave.Text = "    Lưu";
+      this.btnSave.UseVisualStyleBackColor = true;
+      this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
       // 
       // fEmployee
       // 
