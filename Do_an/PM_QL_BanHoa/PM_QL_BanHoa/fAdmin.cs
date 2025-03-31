@@ -19,6 +19,14 @@ namespace PM_QL_BanHoa {
     }
 
     private void fAdmin_Load(object sender, EventArgs e) {
+      toolTip1.SetToolTip(picEmployee, "Nhân Viên");
+      toolTip1.SetToolTip(picCustomer, "Khách Hàng");
+      toolTip1.SetToolTip(picInvoice, "Hóa Đơn");
+      toolTip1.SetToolTip(picInvoice_details, "Chi Tiết Hóa Đơn");
+      toolTip1.SetToolTip(picImport_goods, "Nhập Hàng");
+      toolTip1.SetToolTip(picExport_goods, "Xuất Hàng");
+      toolTip1.SetToolTip(picStatistics, "Thống Kê");
+      toolTip1.SetToolTip(picProduct, "Sản Phẩm");
 
     }
 

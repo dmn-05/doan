@@ -69,7 +69,17 @@ namespace PM_QL_BanHoa {
             row.Cells["colDiaChi"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colDiaChi"].Value.ToString())
             ) {
             if (!row.IsNewRow) {
-              dgvCustomer.Rows.RemoveAt(i);
+              if (MessageBox.Show("Bạn có muốn xóa dòng hết dữ liệu dòng này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+                dgvCustomer.Rows.RemoveAt(i);
+              } else {
+                foreach (DataGridViewCell cell in row.Cells) {
+                  if (cell.Value == null || string.IsNullOrWhiteSpace(cell.Value.ToString())) {
+                    dgvCustomer.CurrentCell = cell; // Di chuyển focus đến ô MatKhau
+                    dgvCustomer.BeginEdit(true); // Bắt đầu chế độ chỉnh sửa
+                    return; // Dừng lại để bắt người dùng nhập mật khẩu
+                  }
+                }
+              }
             }
           }
         }
@@ -93,6 +103,28 @@ namespace PM_QL_BanHoa {
         e.Cancel = true;
       }
 
+    }
+
+    private void btnSearch_Click(object sender, EventArgs e) {
+      if (string.IsNullOrWhiteSpace(txtName.Text)) {
+        LoadDSKhachHang();
+        return;
+      }
+
+      string name = txtName.Text.Trim();
+      string query = "SELECT * FROM KhachHang WHERE TenKH LIKE @Name";
+
+      DataTable data = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
+
+      if (dsKhachHang.Tables.Contains("KhachHang")) {
+        dsKhachHang.Tables["KhachHang"].Clear();  // Xóa dữ liệu cũ
+        dsKhachHang.Tables["KhachHang"].Merge(data);  // Gộp dữ liệu mới vào
+      } else {
+        dsKhachHang.Tables.Add(data);  // Nếu chưa có, thêm bảng mới vào DataSet
+        dsKhachHang.Tables["KhachHang"].TableName = "KhachHang"; // Đặt lại tên bảng
+      }
+
+      dgvCustomer.DataSource = dsKhachHang.Tables["KhachHang"]; // Cập nhật dữ liệu cho DataGridView
     }
   }
 }

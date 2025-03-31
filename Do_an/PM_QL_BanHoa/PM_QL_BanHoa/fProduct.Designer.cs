@@ -38,6 +38,9 @@
       this.colGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colGiaXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colSoLuongTonKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.label1 = new System.Windows.Forms.Label();
+      this.btnSearch = new System.Windows.Forms.Button();
+      this.txtName = new System.Windows.Forms.TextBox();
       this.groupBox2.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
       this.SuspendLayout();
@@ -63,12 +66,15 @@
       this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+      this.groupBox2.Controls.Add(this.label1);
+      this.groupBox2.Controls.Add(this.btnSearch);
+      this.groupBox2.Controls.Add(this.txtName);
       this.groupBox2.Controls.Add(this.dgvProduct);
       this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBox2.ForeColor = System.Drawing.Color.Blue;
-      this.groupBox2.Location = new System.Drawing.Point(26, 12);
+      this.groupBox2.Location = new System.Drawing.Point(26, 28);
       this.groupBox2.Name = "groupBox2";
-      this.groupBox2.Size = new System.Drawing.Size(1189, 641);
+      this.groupBox2.Size = new System.Drawing.Size(1189, 625);
       this.groupBox2.TabIndex = 2;
       this.groupBox2.TabStop = false;
       this.groupBox2.Text = "Quản Lý Sản Phẩm";
@@ -87,11 +93,11 @@
             this.colGiaNhap,
             this.colGiaXuat,
             this.colSoLuongTonKho});
-      this.dgvProduct.Location = new System.Drawing.Point(26, 46);
+      this.dgvProduct.Location = new System.Drawing.Point(28, 87);
       this.dgvProduct.Name = "dgvProduct";
       this.dgvProduct.RowHeadersWidth = 51;
       this.dgvProduct.RowTemplate.Height = 24;
-      this.dgvProduct.Size = new System.Drawing.Size(1137, 551);
+      this.dgvProduct.Size = new System.Drawing.Size(1137, 515);
       this.dgvProduct.TabIndex = 1;
       // 
       // colMaSP
@@ -136,6 +142,39 @@
       this.colSoLuongTonKho.MinimumWidth = 6;
       this.colSoLuongTonKho.Name = "colSoLuongTonKho";
       // 
+      // label1
+      // 
+      this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+      this.label1.AutoSize = true;
+      this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+      this.label1.ForeColor = System.Drawing.Color.Blue;
+      this.label1.Location = new System.Drawing.Point(625, 35);
+      this.label1.Name = "label1";
+      this.label1.Size = new System.Drawing.Size(114, 25);
+      this.label1.TabIndex = 6;
+      this.label1.Text = "Nhập Tên:";
+      // 
+      // btnSearch
+      // 
+      this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+      this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btnSearch.Location = new System.Drawing.Point(1064, 32);
+      this.btnSearch.Name = "btnSearch";
+      this.btnSearch.Size = new System.Drawing.Size(101, 28);
+      this.btnSearch.TabIndex = 5;
+      this.btnSearch.Text = "Tìm";
+      this.btnSearch.UseVisualStyleBackColor = true;
+      this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+      // 
+      // txtName
+      // 
+      this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+      this.txtName.Location = new System.Drawing.Point(751, 32);
+      this.txtName.Multiline = true;
+      this.txtName.Name = "txtName";
+      this.txtName.Size = new System.Drawing.Size(286, 28);
+      this.txtName.TabIndex = 4;
+      // 
       // fProduct
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -148,6 +187,7 @@
       this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fProduct_FormClosing);
       this.Load += new System.EventHandler(this.fProduct_Load);
       this.groupBox2.ResumeLayout(false);
+      this.groupBox2.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
       this.ResumeLayout(false);
 
@@ -164,5 +204,8 @@
     private System.Windows.Forms.DataGridViewTextBoxColumn colGiaNhap;
     private System.Windows.Forms.DataGridViewTextBoxColumn colGiaXuat;
     private System.Windows.Forms.DataGridViewTextBoxColumn colSoLuongTonKho;
+    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Button btnSearch;
+    private System.Windows.Forms.TextBox txtName;
   }
 }

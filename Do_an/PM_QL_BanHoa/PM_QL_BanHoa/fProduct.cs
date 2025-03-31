@@ -76,7 +76,17 @@ namespace PM_QL_BanHoa {
             row.Cells["colGiaXuat"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colGiaXuat"].Value.ToString())
             ) {
             if (!row.IsNewRow) {
-              dgvProduct.Rows.RemoveAt(i);
+              if (MessageBox.Show("Bạn có muốn xóa dòng hết dữ liệu dòng này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+                dgvProduct.Rows.RemoveAt(i);
+              } else {
+                foreach (DataGridViewCell cell in row.Cells) {
+                  if (cell.Value == null || string.IsNullOrWhiteSpace(cell.Value.ToString())) {
+                    dgvProduct.CurrentCell = cell; // Di chuyển focus đến ô trống
+                    dgvProduct.BeginEdit(true); // Bắt đầu chế độ chỉnh sửa
+                    return; // Dừng lại để bắt người dùng nhập mật khẩu
+                  }
+                }
+              }
             }
           }
         }
@@ -93,6 +103,28 @@ namespace PM_QL_BanHoa {
         daSP.Update(dsSanPham, "SanPham");
         LoadDSSanPham();
       }
+    }
+
+    private void btnSearch_Click(object sender, EventArgs e) {
+      if (string.IsNullOrWhiteSpace(txtName.Text)) {
+        LoadDSSanPham();
+        return;
+      }
+
+      string name = txtName.Text.Trim();
+      string query = "SELECT * FROM SanPham WHERE TenSP LIKE @Name";
+
+      DataTable data = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
+
+      if (dsSanPham.Tables.Contains("SanPham")) {
+        dsSanPham.Tables["SanPham"].Clear();  // Xóa dữ liệu cũ
+        dsSanPham.Tables["SanPham"].Merge(data);  // Gộp dữ liệu mới vào
+      } else {
+        dsSanPham.Tables.Add(data);  // Nếu chưa có, thêm bảng mới vào DataSet
+        dsSanPham.Tables["SanPham"].TableName = "SanPham"; // Đặt lại tên bảng
+      }
+
+      dgvProduct.DataSource = dsSanPham.Tables["SanPham"]; // Cập nhật dữ liệu cho DataGridView
     }
   }
 }

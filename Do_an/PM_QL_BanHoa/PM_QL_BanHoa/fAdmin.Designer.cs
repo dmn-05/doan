@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+      this.components = new System.ComponentModel.Container();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
       this.picStatistics = new System.Windows.Forms.PictureBox();
       this.picImport_goods = new System.Windows.Forms.PictureBox();
@@ -37,6 +38,7 @@
       this.picEmployee = new System.Windows.Forms.PictureBox();
       this.picInvoice_details = new System.Windows.Forms.PictureBox();
       this.picExport_goods = new System.Windows.Forms.PictureBox();
+      this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
       ((System.ComponentModel.ISupportInitialize)(this.picStatistics)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.picImport_goods)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.picProduct)).BeginInit();
@@ -176,5 +178,6 @@
         private System.Windows.Forms.PictureBox picEmployee;
     private System.Windows.Forms.PictureBox picInvoice_details;
     private System.Windows.Forms.PictureBox picExport_goods;
+    private System.Windows.Forms.ToolTip toolTip1;
   }
 }

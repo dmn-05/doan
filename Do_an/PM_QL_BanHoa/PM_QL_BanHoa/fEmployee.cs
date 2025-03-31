@@ -75,15 +75,25 @@ namespace PM_QL_BanHoa {
 
           if (
             row.Cells["colTenNV"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colTenNV"].Value.ToString()) ||
-            row.Cells["colTenDangNhap"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colTenDangNhap"].Value.ToString())||
-            row.Cells["colMatKhau"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colMatKhau"].Value.ToString())||
-            row.Cells["colEmail"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colEmail"].Value.ToString())||
-            row.Cells["colSoDienThoai"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colSoDienThoai"].Value.ToString())||
-            row.Cells["colChucVu"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colChucVu"].Value.ToString())||
+            row.Cells["colTenDangNhap"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colTenDangNhap"].Value.ToString()) ||
+            row.Cells["colMatKhau"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colMatKhau"].Value.ToString()) ||
+            row.Cells["colEmail"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colEmail"].Value.ToString()) ||
+            row.Cells["colSoDienThoai"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colSoDienThoai"].Value.ToString()) ||
+            row.Cells["colChucVu"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colChucVu"].Value.ToString()) ||
             row.Cells["colDiaChi"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colDiaChi"].Value.ToString())
             ) {
             if (!row.IsNewRow) {
-              dgvEmployee.Rows.RemoveAt(i);
+              if (MessageBox.Show("Bạn có muốn xóa dòng hết dữ liệu dòng này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+                dgvEmployee.Rows.RemoveAt(i);
+              } else {
+                foreach (DataGridViewCell cell in row.Cells) {
+                  if (cell.Value == null || string.IsNullOrWhiteSpace(cell.Value.ToString())) {
+                    dgvEmployee.CurrentCell = cell; // Di chuyển focus đến ô trống
+                    dgvEmployee.BeginEdit(true); // Bắt đầu chế độ chỉnh sửa
+                    return; // Dừng lại để bắt người dùng nhập mật khẩu
+                  }
+                }
+              }
             }
           }
         }
@@ -101,6 +111,29 @@ namespace PM_QL_BanHoa {
         LoadDSNhanVien();
       }
     }
+
+    private void btnSearch_Click(object sender, EventArgs e) {
+      if (string.IsNullOrWhiteSpace(txtName.Text)) {
+        LoadDSNhanVien();
+        return;
+      }
+
+      string name = txtName.Text.Trim();
+      string query = "SELECT * FROM NhanVien WHERE TenNV LIKE @Name";
+
+      DataTable data = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
+
+      if (dsNhanVien.Tables.Contains("NhanVien")) {
+        dsNhanVien.Tables["NhanVien"].Clear();  // Xóa dữ liệu cũ
+        dsNhanVien.Tables["NhanVien"].Merge(data);  // Gộp dữ liệu mới vào
+      } else {
+        dsNhanVien.Tables.Add(data);  // Nếu chưa có, thêm bảng mới vào DataSet
+        dsNhanVien.Tables["NhanVien"].TableName = "NhanVien"; // Đặt lại tên bảng
+      }
+
+      dgvEmployee.DataSource = dsNhanVien.Tables["NhanVien"]; // Cập nhật dữ liệu cho DataGridView
+    }
+
   }
 }
 

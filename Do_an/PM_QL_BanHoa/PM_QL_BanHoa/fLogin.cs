@@ -21,13 +21,14 @@ namespace PM_QL_BanHoa {
     }
 
     private void btnLogin_Click(object sender, EventArgs e) {
-      fAdmin f = new fAdmin();
+      fAdmin f_Admin = new fAdmin();
+      
       string Username = txtUserName.Text;
       string Password = txtPassword.Text;
 
       if (Login_Admin(Username, Password)) {
         this.Hide();
-        f.ShowDialog();
+        f_Admin.ShowDialog();
         this.Show();
       } else if (Login(Username, Password)) {
         MessageBox.Show("Đăng nhập thành công nhân viên", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
