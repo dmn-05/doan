@@ -15,7 +15,11 @@ namespace PM_QL_BanHoa {
     }
 
     private void picQLSP_Click(object sender, EventArgs e) {
+      fProduct f = new fProduct();
 
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
     }
 
     private void fAdmin_Load(object sender, EventArgs e) {

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using PM_QL_BanHoa.BUS;
 
 namespace PM_QL_BanHoa {
   public partial class fCustomer : Form {
@@ -69,7 +71,7 @@ namespace PM_QL_BanHoa {
             row.Cells["colDiaChi"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colDiaChi"].Value.ToString())
             ) {
             if (!row.IsNewRow) {
-              if (MessageBox.Show("Bạn có muốn xóa dòng hết dữ liệu dòng này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+              if (MessageBox.Show($"Bạn có muốn xóa dòng dữ liệu dòng có MaKH {row.Cells["colMaKH"].Value}?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
                 dgvCustomer.Rows.RemoveAt(i);
               } else {
                 foreach (DataGridViewCell cell in row.Cells) {
@@ -114,7 +116,7 @@ namespace PM_QL_BanHoa {
       string name = txtName.Text.Trim();
       string query = "SELECT * FROM KhachHang WHERE TenKH LIKE @Name";
 
-      DataTable data = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
+      DataTable data = DataProviderBUS.Instance.ExecuteQuery_Search(query, new object[] { "%" + name + "%" });
 
       if (dsKhachHang.Tables.Contains("KhachHang")) {
         dsKhachHang.Tables["KhachHang"].Clear();  // Xóa dữ liệu cũ

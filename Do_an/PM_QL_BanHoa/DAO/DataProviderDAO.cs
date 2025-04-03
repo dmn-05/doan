@@ -6,18 +6,18 @@ using System.Linq;
 using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
-
+using PM_QL_BanHoa.DAO;
 namespace PM_QL_BanHoa.DAO {
-  public class DataProvider {
+  public class DataProviderDAO {
     private string ConnectionSTR = "Data Source=.\\SQLEXPRESS01;Initial Catalog=QuanLyBanHang;Integrated Security=True";
-    private static DataProvider instance;
+    private static DataProviderDAO instance;
 
-    public static DataProvider Instance {
-      get { if (instance == null) { instance = new DataProvider(); } return DataProvider.instance; }
+    public static DataProviderDAO Instance {
+      get { if (instance == null) { instance = new DataProviderDAO(); } return DataProviderDAO.instance; }
       private set => instance = value;
     }
 
-    private DataProvider() { }
+    private DataProviderDAO() { }
 
     public DataTable ExecuteQuery(string query, object[] parameter = null) {
       DataTable data = new DataTable();

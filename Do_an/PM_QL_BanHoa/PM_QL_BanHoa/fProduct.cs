@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,7 +77,7 @@ namespace PM_QL_BanHoa {
             row.Cells["colGiaXuat"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colGiaXuat"].Value.ToString())
             ) {
             if (!row.IsNewRow) {
-              if (MessageBox.Show("Bạn có muốn xóa dòng hết dữ liệu dòng này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+              if (MessageBox.Show($"Bạn có muốn xóa dòng dữ liệu dòng có MaSP {row.Cells["colMaSP"].Value}?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
                 dgvProduct.Rows.RemoveAt(i);
               } else {
                 foreach (DataGridViewCell cell in row.Cells) {
@@ -114,7 +115,7 @@ namespace PM_QL_BanHoa {
       string name = txtName.Text.Trim();
       string query = "SELECT * FROM SanPham WHERE TenSP LIKE @Name";
 
-      DataTable data = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
+      DataTable data = DataProviderBUS.Instance.ExecuteQuery_Search(query, new object[] { "%" + name + "%" });
 
       if (dsSanPham.Tables.Contains("SanPham")) {
         dsSanPham.Tables["SanPham"].Clear();  // Xóa dữ liệu cũ

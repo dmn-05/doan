@@ -10,6 +10,8 @@ using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using PM_QL_BanHoa.BUS;
 
 namespace PM_QL_BanHoa {
   public partial class fEmployee : Form {
@@ -83,7 +85,7 @@ namespace PM_QL_BanHoa {
             row.Cells["colDiaChi"].Value == null || string.IsNullOrWhiteSpace(row.Cells["colDiaChi"].Value.ToString())
             ) {
             if (!row.IsNewRow) {
-              if (MessageBox.Show("Bạn có muốn xóa dòng hết dữ liệu dòng này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+              if (MessageBox.Show($"Bạn có muốn xóa dòng dữ liệu dòng có MaNV {row.Cells["colMaNV"].Value}?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
                 dgvEmployee.Rows.RemoveAt(i);
               } else {
                 foreach (DataGridViewCell cell in row.Cells) {
@@ -120,9 +122,7 @@ namespace PM_QL_BanHoa {
 
       string name = txtName.Text.Trim();
       string query = "SELECT * FROM NhanVien WHERE TenNV LIKE @Name";
-
-      DataTable data = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
-
+      DataTable data = DataProviderBUS.Instance.ExecuteQuery_Search(query, new object[] { "%" + name + "%" });
       if (dsNhanVien.Tables.Contains("NhanVien")) {
         dsNhanVien.Tables["NhanVien"].Clear();  // Xóa dữ liệu cũ
         dsNhanVien.Tables["NhanVien"].Merge(data);  // Gộp dữ liệu mới vào

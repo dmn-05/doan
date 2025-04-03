@@ -1,4 +1,4 @@
-﻿using PM_QL_BanHoa.DAO;
+﻿using PM_QL_BanHoa.BUS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace PM_QL_BanHoa {
   public partial class fLogin : Form {
@@ -37,10 +38,10 @@ namespace PM_QL_BanHoa {
       }
     }
     private bool Login(string username, string password) {
-      return AccountDAO.Instance.Login(username, password);
+      return AccountBUS.Instance.Login(username, password);
     }
     private bool Login_Admin(string username, string password) {
-      return AccountDAO.Instance.Login_Admin(username, password);
+      return AccountBUS.Instance.Login_Admin(username, password);
     }
     private void fLogin_FormClosing(object sender, FormClosingEventArgs e) {
       if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
