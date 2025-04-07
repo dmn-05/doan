@@ -1,83 +1,86 @@
-﻿namespace PM_QL_BanHoa
-{
-    partial class fImport_goods
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+﻿namespace PM_QL_BanHoa {
+  partial class fExport_goods {
+    /// <summary>
+    /// Required designer variable.
+    /// </summary>
+    private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+    /// <summary>
+    /// Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing) {
+      if (disposing && (components != null)) {
+        components.Dispose();
+      }
+      base.Dispose(disposing);
+    }
 
-        #region Windows Form Designer generated code
+    #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fImport_goods));
-      this.dgvfImport_goods = new System.Windows.Forms.DataGridView();
-      this.colMaHDNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+    /// <summary>
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent() {
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fExport_goods));
+      this.cbMaSP = new System.Windows.Forms.ComboBox();
+      this.dgvExport_goods_goods = new System.Windows.Forms.DataGridView();
+      this.colMaHDXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.colNgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.colNgayXuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox1 = new System.Windows.Forms.GroupBox();
       this.groupBox2 = new System.Windows.Forms.GroupBox();
-      this.cbMaSP = new System.Windows.Forms.ComboBox();
       this.label5 = new System.Windows.Forms.Label();
       this.label4 = new System.Windows.Forms.Label();
       this.label2 = new System.Windows.Forms.Label();
       this.btnAdd = new System.Windows.Forms.Button();
-      this.dateNgayNhap = new System.Windows.Forms.DateTimePicker();
+      this.dateNgayXuat = new System.Windows.Forms.DateTimePicker();
       this.txtSoLuong = new System.Windows.Forms.TextBox();
-      ((System.ComponentModel.ISupportInitialize)(this.dgvfImport_goods)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.dgvExport_goods_goods)).BeginInit();
       this.tableLayoutPanel1.SuspendLayout();
       this.groupBox1.SuspendLayout();
       this.groupBox2.SuspendLayout();
       this.SuspendLayout();
       // 
-      // dgvfImport_goods
+      // cbMaSP
       // 
-      this.dgvfImport_goods.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+      this.cbMaSP.FormattingEnabled = true;
+      this.cbMaSP.Location = new System.Drawing.Point(152, 70);
+      this.cbMaSP.Name = "cbMaSP";
+      this.cbMaSP.Size = new System.Drawing.Size(229, 33);
+      this.cbMaSP.TabIndex = 43;
+      // 
+      // dgvExport_goods_goods
+      // 
+      this.dgvExport_goods_goods.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-      this.dgvfImport_goods.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-      this.dgvfImport_goods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dgvfImport_goods.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colMaHDNhap,
+      this.dgvExport_goods_goods.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+      this.dgvExport_goods_goods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dgvExport_goods_goods.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colMaHDXuat,
             this.colMaSP,
-            this.colNgayNhap,
+            this.colNgayXuat,
             this.colSoLuong,
             this.colThanhTien});
-      this.dgvfImport_goods.Location = new System.Drawing.Point(26, 46);
-      this.dgvfImport_goods.Name = "dgvfImport_goods";
-      this.dgvfImport_goods.RowHeadersWidth = 51;
-      this.dgvfImport_goods.RowTemplate.Height = 24;
-      this.dgvfImport_goods.Size = new System.Drawing.Size(786, 657);
-      this.dgvfImport_goods.TabIndex = 0;
+      this.dgvExport_goods_goods.Location = new System.Drawing.Point(26, 46);
+      this.dgvExport_goods_goods.Name = "dgvExport_goods_goods";
+      this.dgvExport_goods_goods.RowHeadersWidth = 51;
+      this.dgvExport_goods_goods.RowTemplate.Height = 24;
+      this.dgvExport_goods_goods.Size = new System.Drawing.Size(786, 657);
+      this.dgvExport_goods_goods.TabIndex = 0;
       // 
-      // colMaHDNhap
+      // colMaHDXuat
       // 
-      this.colMaHDNhap.DataPropertyName = "MaHDNhap";
-      this.colMaHDNhap.HeaderText = "MaHDNhap";
-      this.colMaHDNhap.MinimumWidth = 6;
-      this.colMaHDNhap.Name = "colMaHDNhap";
+      this.colMaHDXuat.DataPropertyName = "MaHDXuat";
+      this.colMaHDXuat.HeaderText = "MaHDXuat";
+      this.colMaHDXuat.MinimumWidth = 6;
+      this.colMaHDXuat.Name = "colMaHDXuat";
       // 
       // colMaSP
       // 
@@ -86,15 +89,15 @@
       this.colMaSP.MinimumWidth = 6;
       this.colMaSP.Name = "colMaSP";
       // 
-      // colNgayNhap
+      // colNgayXuat
       // 
-      this.colNgayNhap.DataPropertyName = "NgayNhap";
-      dataGridViewCellStyle1.Format = "dd/MM/yyyy";
-      dataGridViewCellStyle1.NullValue = null;
-      this.colNgayNhap.DefaultCellStyle = dataGridViewCellStyle1;
-      this.colNgayNhap.HeaderText = "NgayNhap";
-      this.colNgayNhap.MinimumWidth = 100;
-      this.colNgayNhap.Name = "colNgayNhap";
+      this.colNgayXuat.DataPropertyName = "NgayXuat";
+      dataGridViewCellStyle2.Format = "dd/MM/yyyy";
+      dataGridViewCellStyle2.NullValue = null;
+      this.colNgayXuat.DefaultCellStyle = dataGridViewCellStyle2;
+      this.colNgayXuat.HeaderText = "NgayXuat";
+      this.colNgayXuat.MinimumWidth = 100;
+      this.colNgayXuat.Name = "colNgayXuat";
       // 
       // colSoLuong
       // 
@@ -123,14 +126,14 @@
       this.tableLayoutPanel1.RowCount = 1;
       this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
       this.tableLayoutPanel1.Size = new System.Drawing.Size(1247, 738);
-      this.tableLayoutPanel1.TabIndex = 2;
+      this.tableLayoutPanel1.TabIndex = 3;
       // 
       // groupBox1
       // 
       this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-      this.groupBox1.Controls.Add(this.dgvfImport_goods);
+      this.groupBox1.Controls.Add(this.dgvExport_goods_goods);
       this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBox1.ForeColor = System.Drawing.Color.Blue;
       this.groupBox1.Location = new System.Drawing.Point(3, 3);
@@ -138,7 +141,7 @@
       this.groupBox1.Size = new System.Drawing.Size(841, 732);
       this.groupBox1.TabIndex = 1;
       this.groupBox1.TabStop = false;
-      this.groupBox1.Text = "Quản Lý Nhập Hàng";
+      this.groupBox1.Text = "Quản Lý Xuất Hàng";
       // 
       // groupBox2
       // 
@@ -147,7 +150,7 @@
       this.groupBox2.Controls.Add(this.label4);
       this.groupBox2.Controls.Add(this.label2);
       this.groupBox2.Controls.Add(this.btnAdd);
-      this.groupBox2.Controls.Add(this.dateNgayNhap);
+      this.groupBox2.Controls.Add(this.dateNgayXuat);
       this.groupBox2.Controls.Add(this.txtSoLuong);
       this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBox2.ForeColor = System.Drawing.Color.Blue;
@@ -157,14 +160,6 @@
       this.groupBox2.TabIndex = 2;
       this.groupBox2.TabStop = false;
       this.groupBox2.Text = "Xử Lý";
-      // 
-      // cbMaSP
-      // 
-      this.cbMaSP.FormattingEnabled = true;
-      this.cbMaSP.Location = new System.Drawing.Point(152, 70);
-      this.cbMaSP.Name = "cbMaSP";
-      this.cbMaSP.Size = new System.Drawing.Size(229, 33);
-      this.cbMaSP.TabIndex = 43;
       // 
       // label5
       // 
@@ -189,9 +184,9 @@
       this.label2.AutoSize = true;
       this.label2.Location = new System.Drawing.Point(14, 162);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(120, 25);
+      this.label2.Size = new System.Drawing.Size(114, 25);
       this.label2.TabIndex = 35;
-      this.label2.Text = "NgayNhap:";
+      this.label2.Text = "NgayXuat:";
       // 
       // btnAdd
       // 
@@ -207,15 +202,15 @@
       this.btnAdd.UseVisualStyleBackColor = false;
       this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
       // 
-      // dateNgayNhap
+      // dateNgayXuat
       // 
-      this.dateNgayNhap.CustomFormat = "dd/MM/yyyy";
-      this.dateNgayNhap.Enabled = false;
-      this.dateNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-      this.dateNgayNhap.Location = new System.Drawing.Point(152, 157);
-      this.dateNgayNhap.Name = "dateNgayNhap";
-      this.dateNgayNhap.Size = new System.Drawing.Size(229, 30);
-      this.dateNgayNhap.TabIndex = 42;
+      this.dateNgayXuat.CustomFormat = "dd/MM/yyyy";
+      this.dateNgayXuat.Enabled = false;
+      this.dateNgayXuat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+      this.dateNgayXuat.Location = new System.Drawing.Point(152, 157);
+      this.dateNgayXuat.Name = "dateNgayXuat";
+      this.dateNgayXuat.Size = new System.Drawing.Size(229, 30);
+      this.dateNgayXuat.TabIndex = 42;
       // 
       // txtSoLuong
       // 
@@ -224,43 +219,42 @@
       this.txtSoLuong.Size = new System.Drawing.Size(229, 30);
       this.txtSoLuong.TabIndex = 39;
       // 
-      // fImport_goods
+      // fExport_goods
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1247, 738);
       this.Controls.Add(this.tableLayoutPanel1);
-      this.Name = "fImport_goods";
+      this.Name = "fExport_goods";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      this.Text = "fImport_goods";
-      this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fImport_goods_FormClosing);
-      this.Load += new System.EventHandler(this.fImport_goods_Load);
-      ((System.ComponentModel.ISupportInitialize)(this.dgvfImport_goods)).EndInit();
+      this.Text = "fExport_goods";
+      this.Load += new System.EventHandler(this.fExport_goods_Load);
+      ((System.ComponentModel.ISupportInitialize)(this.dgvExport_goods_goods)).EndInit();
       this.tableLayoutPanel1.ResumeLayout(false);
       this.groupBox1.ResumeLayout(false);
       this.groupBox2.ResumeLayout(false);
       this.groupBox2.PerformLayout();
       this.ResumeLayout(false);
 
-        }
+    }
 
     #endregion
 
-    private System.Windows.Forms.DataGridView dgvfImport_goods;
+    private System.Windows.Forms.ComboBox cbMaSP;
+    private System.Windows.Forms.DataGridView dgvExport_goods_goods;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     private System.Windows.Forms.GroupBox groupBox1;
-    private System.Windows.Forms.DataGridViewTextBoxColumn colMaHDNhap;
-    private System.Windows.Forms.DataGridViewTextBoxColumn colMaSP;
-    private System.Windows.Forms.DataGridViewTextBoxColumn colNgayNhap;
-    private System.Windows.Forms.DataGridViewTextBoxColumn colSoLuong;
-    private System.Windows.Forms.DataGridViewTextBoxColumn colThanhTien;
     private System.Windows.Forms.GroupBox groupBox2;
     private System.Windows.Forms.Label label5;
     private System.Windows.Forms.Label label4;
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.Button btnAdd;
-    private System.Windows.Forms.DateTimePicker dateNgayNhap;
+    private System.Windows.Forms.DateTimePicker dateNgayXuat;
     private System.Windows.Forms.TextBox txtSoLuong;
-    private System.Windows.Forms.ComboBox cbMaSP;
+    private System.Windows.Forms.DataGridViewTextBoxColumn colMaHDXuat;
+    private System.Windows.Forms.DataGridViewTextBoxColumn colMaSP;
+    private System.Windows.Forms.DataGridViewTextBoxColumn colNgayXuat;
+    private System.Windows.Forms.DataGridViewTextBoxColumn colSoLuong;
+    private System.Windows.Forms.DataGridViewTextBoxColumn colThanhTien;
   }
 }

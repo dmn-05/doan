@@ -122,7 +122,7 @@ namespace PM_QL_BanHoa {
 
       string name = txtName.Text.Trim();
       string query = "SELECT * FROM NhanVien WHERE TenNV LIKE @Name";
-      DataTable data = DataProviderBUS.Instance.ExecuteQuery_Search(query, new object[] { "%" + name + "%" });
+      DataTable data = DataProviderBUS.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
       if (dsNhanVien.Tables.Contains("NhanVien")) {
         dsNhanVien.Tables["NhanVien"].Clear();  // Xóa dữ liệu cũ
         dsNhanVien.Tables["NhanVien"].Merge(data);  // Gộp dữ liệu mới vào
