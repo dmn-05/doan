@@ -9,3 +9,14 @@ D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CoreCompileI
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.dll
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DTO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DTO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.pdb

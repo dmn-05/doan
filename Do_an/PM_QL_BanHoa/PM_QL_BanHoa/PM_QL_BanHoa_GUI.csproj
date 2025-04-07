@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Employee\frmBillManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmBillManagement.Designer.cs">
+      <DependentUpon>frmBillManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmCustomerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmCustomerManagement.Designer.cs">
+      <DependentUpon>frmCustomerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmProductManagement.Designer.cs">
+      <DependentUpon>frmProductManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAccountProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,11 +82,25 @@
     <Compile Include="fCustomer.Designer.cs">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ffdc0212c0d6d6e7e5d46551480916b07d28de3
     <Compile Include="fExport_goods.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fExport_goods.Designer.cs">
       <DependentUpon>fExport_goods.cs</DependentUpon>
+<<<<<<< HEAD
+=======
+=======
+    <Compile Include="fEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmployee.Designer.cs">
+      <DependentUpon>fEmployee.cs</DependentUpon>
+>>>>>>> 8b51bb44ae0ff29f8f9c727eab0cc6effe12cb4a
+>>>>>>> 6ffdc0212c0d6d6e7e5d46551480916b07d28de3
     </Compile>
     <Compile Include="fImport_goods.cs">
       <SubType>Form</SubType>
@@ -94,11 +126,17 @@
     <Compile Include="fProduct.Designer.cs">
       <DependentUpon>fProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="fEmployee.cs">
+    <Compile Include="fEmployeeManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fEmployee.Designer.cs">
-      <DependentUpon>fEmployee.cs</DependentUpon>
+    <Compile Include="fEmployeeManagement.Designer.cs">
+      <DependentUpon>fEmployeeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStatistics.Designer.cs">
+      <DependentUpon>fStatistics.cs</DependentUpon>
     </Compile>
     <Compile Include="fStatistics.cs">
       <SubType>Form</SubType>
@@ -123,8 +161,18 @@
     <EmbeddedResource Include="fCustomer.resx">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="fExport_goods.resx">
       <DependentUpon>fExport_goods.cs</DependentUpon>
+=======
+<<<<<<< HEAD
+    <EmbeddedResource Include="fExport_goods.resx">
+      <DependentUpon>fExport_goods.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="fEmployee.resx">
+      <DependentUpon>fEmployee.cs</DependentUpon>
+>>>>>>> 8b51bb44ae0ff29f8f9c727eab0cc6effe12cb4a
+>>>>>>> 6ffdc0212c0d6d6e7e5d46551480916b07d28de3
     </EmbeddedResource>
     <EmbeddedResource Include="fImport_goods.resx">
       <DependentUpon>fImport_goods.cs</DependentUpon>
@@ -135,8 +183,8 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fEmployee.resx">
-      <DependentUpon>fEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="fEmployeeManagement.resx">
+      <DependentUpon>fEmployeeManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fProduct.resx">
       <DependentUpon>fProduct.cs</DependentUpon>
