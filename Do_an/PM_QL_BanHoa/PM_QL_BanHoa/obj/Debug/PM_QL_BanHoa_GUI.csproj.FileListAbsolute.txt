@@ -23,3 +23,4 @@ D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\BUS.pdb
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\DTO.pdb
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\DAO.pdb
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa_GUI.csproj.CopyComplete
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fExport_goods.resources

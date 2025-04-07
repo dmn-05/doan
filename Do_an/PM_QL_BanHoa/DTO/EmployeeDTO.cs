@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DTO {
   public class EmployeeDTO {
-    private int MaNV;
-    private string TenNV;
-    private string TenDangNhap;
-    private string MatKhau;
-    private string SoDienThoai;
-    private string Email;
-    private string DiaChi;
-    private string ChucVu;
-    private int TrangThai;
+    public int MaNV { get; set; }
+    public string TenNV { get; set; }
+    public string TenDangNhap { get; set; }
+    public string MatKhau { get; set; }
+    public string SoDienThoai { get; set; }
+    public string Email { get; set; }
+    public string DiaChi { get; set; }
+    public string ChucVu { get; set; }
+    public int TrangThai { get; set; }
   }
 }

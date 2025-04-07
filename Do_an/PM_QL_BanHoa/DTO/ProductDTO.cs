@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DTO {
   public class ProductDTO {
-    private int MaSP;
-    private string TenSP;
-    private double GiaBanLe;
-    private double GiaNhap;
-    private double GiaXuat;
-    private int SoLuongTonKho;
+    public int MaSP { get; set; }
+    public string TenSP { get; set; }
+    public double GiaBanLe { get; set; }
+    public double GiaNhap { get; set; }
+    public double GiaXuat { get; set; }
+    public int SoLuongTonKho { get; set; }
   }
 }
