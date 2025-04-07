@@ -2,19 +2,26 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using PM_QL_BanHoa.BUS;
 
 namespace PM_QL_BanHoa {
-	public partial class fEmployee : Form {
-		public fEmployee() {
-			InitializeComponent();
-		}
+  public partial class _fEmployee : Form {
+    string strKetNoi = "Data Source=.\\SQLEXPRESS01;Initial Catalog=QuanLyBanHang;Integrated Security=True";
+    DataSet dsNhanVien = new DataSet();
+    SqlDataAdapter daNV;
+    public _fEmployee() {
+      InitializeComponent();
+    }
 
-<<<<<<< HEAD
     private void fQLNV_FormClosing(object sender, FormClosingEventArgs e) {
       if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
         e.Cancel = true;
@@ -115,7 +122,7 @@ namespace PM_QL_BanHoa {
 
       string name = txtName.Text.Trim();
       string query = "SELECT * FROM NhanVien WHERE TenNV LIKE @Name";
-      DataTable data = DataProviderBUS.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
+      DataTable data = DataProviderBUS.Instance.ExecuteQuery_Search(query, new object[] { "%" + name + "%" });
       if (dsNhanVien.Tables.Contains("NhanVien")) {
         dsNhanVien.Tables["NhanVien"].Clear();  // Xóa dữ liệu cũ
         dsNhanVien.Tables["NhanVien"].Merge(data);  // Gộp dữ liệu mới vào
@@ -128,12 +135,5 @@ namespace PM_QL_BanHoa {
     }
 
   }
-=======
-		private void fEmployee_FormClosing(object sender, FormClosingEventArgs e) {
-			if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
-				e.Cancel = true;
-			}
-		}
-	}
->>>>>>> 8b51bb44ae0ff29f8f9c727eab0cc6effe12cb4a
 }
+

@@ -23,19 +23,39 @@ namespace PM_QL_BanHoa {
 
     private void btnLogin_Click(object sender, EventArgs e) {
       fAdmin f_Admin = new fAdmin();
+      fEmployee f_Employee = new fEmployee();
       
       string Username = txtUserName.Text;
       string Password = txtPassword.Text;
 
       if (Login_Admin(Username, Password)) {
-        this.Hide();
+				MessageBox.Show(
+					"Đăng nhập thành công quản trị viên",
+					"Thông báo",
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Information
+				);
+				this.Hide();
         f_Admin.ShowDialog();
         this.Show();
       } else if (Login(Username, Password)) {
-        MessageBox.Show("Đăng nhập thành công nhân viên", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        MessageBox.Show(
+          "Đăng nhập thành công nhân viên",
+          "Thông báo",
+          MessageBoxButtons.OK,
+          MessageBoxIcon.Information
+        );
+        this.Hide();
+        f_Employee.ShowDialog();
+        this.Show();
       } else {
-        MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
-      }
+				MessageBox.Show(
+					"Đăng nhập thất bại",
+					"Thông báo",
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Information
+				);
+			}
     }
     private bool Login(string username, string password) {
       return AccountBUS.Instance.Login(username, password);

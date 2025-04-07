@@ -41,11 +41,7 @@ namespace PM_QL_BanHoa {
     }
 
     private void picEmployee_Click(object sender, EventArgs e) {
-      fEmployee f = new fEmployee();
 
-      this.Hide();
-      f.ShowDialog();
-      this.Show();
     }
 
     private void picCustomer_Click(object sender, EventArgs e) {
