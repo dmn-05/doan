@@ -1,4 +1,5 @@
 ﻿using PM_QL_BanHoa.DAO;
+using PM_QL_BanHoa.Employee;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PM_QL_BanHoa {
+
   public partial class fLogin : Form {
     public fLogin() {
       InitializeComponent();
@@ -21,26 +23,33 @@ namespace PM_QL_BanHoa {
     }
 
     private void btnLogin_Click(object sender, EventArgs e) {
-      fAdmin f = new fAdmin();
+      fAdmin f_Admin = new fAdmin();
+      frmFeatureManager f_Employee = new frmFeatureManager();
+
       string Username = txtUserName.Text;
       string Password = txtPassword.Text;
 
       if (Login_Admin(Username, Password)) {
         this.Hide();
-        f.ShowDialog();
+        f_Admin.ShowDialog();
         this.Show();
       } else if (Login(Username, Password)) {
-        MessageBox.Show("Đăng nhập thành công nhân viên", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-      } else {
+				this.Hide();
+				f_Employee.ShowDialog();
+				this.Show();
+			} else {
         MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
       }
     }
+
     private bool Login(string username, string password) {
       return AccountDAO.Instance.Login(username, password);
     }
+
     private bool Login_Admin(string username, string password) {
       return AccountDAO.Instance.Login_Admin(username, password);
     }
+
     private void fLogin_FormClosing(object sender, FormClosingEventArgs e) {
       if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
         e.Cancel = true;
@@ -54,5 +63,6 @@ namespace PM_QL_BanHoa {
         txtPassword.UseSystemPasswordChar = true;
       }
     }
+
   }
 }

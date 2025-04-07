@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PM_QL_BanHoa.DAO {
   public class DataProvider {
-    private string ConnectionSTR = "Data Source=.\\SQLEXPRESS01;Initial Catalog=QuanLyBanHang;Integrated Security=True";
+    private string ConnectionSTR = "Data Source=LAPTOP-5N7OU2IQ\\SQLEXPRESS;Initial Catalog=QuanLyBanHang;Integrated Security=True";
     private static DataProvider instance;
 
     public static DataProvider Instance {
@@ -39,8 +39,10 @@ namespace PM_QL_BanHoa.DAO {
         adapter.Fill(data);
         connection.Close();
       }
+
       return data;
     }
+
     public int ExecuteNonQuery(string query, object[] parameter = null) {
       int data = 0;
       using (SqlConnection connection = new SqlConnection(ConnectionSTR)) {
@@ -56,9 +58,11 @@ namespace PM_QL_BanHoa.DAO {
             }
           }
         }
+
         data = sqlCommand.ExecuteNonQuery();
         connection.Close();
       }
+
       return data;
     }
     public object ExecuteScalar(string query, object[] parameter = null) {
@@ -76,6 +80,7 @@ namespace PM_QL_BanHoa.DAO {
             }
           }
         }
+
         data = sqlCommand.ExecuteScalar();
         connection.Close();
       }

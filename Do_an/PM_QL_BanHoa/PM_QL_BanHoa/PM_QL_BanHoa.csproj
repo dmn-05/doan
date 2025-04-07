@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="Employee\frmFeatureManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmFeatureManager.Designer.cs">
+      <DependentUpon>frmFeatureManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAccountProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,30 @@
     <Compile Include="fEmployee.Designer.cs">
       <DependentUpon>fEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee\frmCustomerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmCustomerManagement.Designer.cs">
+      <DependentUpon>frmCustomerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmProductManagement.Designer.cs">
+      <DependentUpon>frmProductManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmSale.Designer.cs">
+      <DependentUpon>frmSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmSaleProcessing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmSaleProcessing.Designer.cs">
+      <DependentUpon>frmSaleProcessing.cs</DependentUpon>
+    </Compile>
     <Compile Include="fTableManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +134,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Employee\frmFeatureManager.resx">
+      <DependentUpon>frmFeatureManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAccountProfile.resx">
       <DependentUpon>fAccountProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fProduct.resx">
       <DependentUpon>fProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmSaleProcessing.resx">
+      <DependentUpon>frmSaleProcessing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>
