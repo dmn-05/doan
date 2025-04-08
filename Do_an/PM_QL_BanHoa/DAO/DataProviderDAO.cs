@@ -41,6 +41,7 @@ namespace PM_QL_BanHoa.DAO {
       }
       return data;
     }
+
     public int ExecuteNonQuery(string query, object[] parameter = null) {
       int data = 0;
       using (SqlConnection connection = new SqlConnection(ConnectionSTR)) {
@@ -61,6 +62,7 @@ namespace PM_QL_BanHoa.DAO {
       }
       return data;
     }
+
     public object ExecuteScalar(string query, object[] parameter = null) {
       object data = 0;
       using (SqlConnection connection = new SqlConnection(ConnectionSTR)) {

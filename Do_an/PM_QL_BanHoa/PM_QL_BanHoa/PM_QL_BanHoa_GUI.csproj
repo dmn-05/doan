@@ -189,6 +189,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Employee\BillManagement\" />
+    <Folder Include="Employee\CustomerManagement\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
