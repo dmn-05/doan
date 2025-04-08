@@ -25,3 +25,6 @@ D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\DAO.pdb
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa_GUI.csproj.CopyComplete
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fExport_goods.resources
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fInvoice_details.resources
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.Employee.frmBillManagement.resources
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.Employee.frmCustomerManagement.resources
+D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.Employee.frmProductManagement.resources
