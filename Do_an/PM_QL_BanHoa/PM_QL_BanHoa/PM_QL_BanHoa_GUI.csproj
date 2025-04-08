@@ -82,25 +82,11 @@
     <Compile Include="fCustomer.Designer.cs">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6ffdc0212c0d6d6e7e5d46551480916b07d28de3
-    <Compile Include="fExport_goods.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fExport_goods.Designer.cs">
-      <DependentUpon>fExport_goods.cs</DependentUpon>
-<<<<<<< HEAD
-=======
-=======
     <Compile Include="fEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fEmployee.Designer.cs">
       <DependentUpon>fEmployee.cs</DependentUpon>
->>>>>>> 8b51bb44ae0ff29f8f9c727eab0cc6effe12cb4a
->>>>>>> 6ffdc0212c0d6d6e7e5d46551480916b07d28de3
     </Compile>
     <Compile Include="fImport_goods.cs">
       <SubType>Form</SubType>
@@ -132,18 +118,6 @@
     <Compile Include="fEmployeeManagement.Designer.cs">
       <DependentUpon>fEmployeeManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="fStatistics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fStatistics.Designer.cs">
-      <DependentUpon>fStatistics.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fStatistics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fStatistics.Designer.cs">
-      <DependentUpon>fStatistics.cs</DependentUpon>
-    </Compile>
     <Compile Include="fTableManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +126,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Employee\frmBillManagement.resx">
+      <DependentUpon>frmBillManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmCustomerManagement.resx">
+      <DependentUpon>frmCustomerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmProductManagement.resx">
+      <DependentUpon>frmProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAccountProfile.resx">
       <DependentUpon>fAccountProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,18 +144,8 @@
     <EmbeddedResource Include="fCustomer.resx">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="fExport_goods.resx">
-      <DependentUpon>fExport_goods.cs</DependentUpon>
-=======
-<<<<<<< HEAD
-    <EmbeddedResource Include="fExport_goods.resx">
-      <DependentUpon>fExport_goods.cs</DependentUpon>
-=======
     <EmbeddedResource Include="fEmployee.resx">
       <DependentUpon>fEmployee.cs</DependentUpon>
->>>>>>> 8b51bb44ae0ff29f8f9c727eab0cc6effe12cb4a
->>>>>>> 6ffdc0212c0d6d6e7e5d46551480916b07d28de3
     </EmbeddedResource>
     <EmbeddedResource Include="fImport_goods.resx">
       <DependentUpon>fImport_goods.cs</DependentUpon>

@@ -1,0 +1,6 @@
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\bin\Release\DTO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\bin\Release\DTO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\obj\Release\DTO.csproj.AssemblyReference.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\obj\Release\DTO.csproj.CoreCompileInputs.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\obj\Release\DTO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\obj\Release\DTO.pdb

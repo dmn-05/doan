@@ -13,5 +13,11 @@ namespace PM_QL_BanHoa.Employee {
 		public frmBillManagement() {
 			InitializeComponent();
 		}
+
+		private void frmBillManagement_FormClosing(object sender, FormClosingEventArgs e) {
+			if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
+				e.Cancel = true;
+			}
+		}
 	}
 }

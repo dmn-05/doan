@@ -35,6 +35,7 @@ namespace PM_QL_BanHoa {
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Information
 				);
+
 				this.Hide();
         f_Admin.ShowDialog();
         this.Show();
@@ -45,6 +46,7 @@ namespace PM_QL_BanHoa {
           MessageBoxButtons.OK,
           MessageBoxIcon.Information
         );
+
         this.Hide();
         f_Employee.ShowDialog();
         this.Show();

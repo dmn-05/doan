@@ -22,11 +22,8 @@ namespace BUS {
         return instance;
       }
     }
-    public DataTable ExecuteQuery(string query, object[] parameter = null) {
-      return DataProviderDAO.Instance.ExecuteQuery(query, parameter);
-    }
-    public int ExecuteNonQuery(string query, object[] parameter = null) {
-      return DataProviderDAO.Instance.ExecuteNonQuery(query, parameter);
+    public DataTable ExecuteQuery_Search(string query, object[] parameter = null) {
+      return DataProviderDAO.Instance.ExecuteQuery(query, parameter); ;
     }
   }
 }

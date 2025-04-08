@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DTO {
   public class Invoice_detailsDTO {
-    public int MaHD { get; set; }
-    public int MaSP { get; set; }
-    public int SoLuong { get; set; }
+    private int MaHD;
+    private int MaSP;
+    private int SoLuong;
   };
 }

@@ -23,12 +23,33 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			this.components = new System.ComponentModel.Container();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.SuspendLayout();
+			// 
+			// panel1
+			// 
+			this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.panel1.Location = new System.Drawing.Point(12, 12);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(776, 426);
+			this.panel1.TabIndex = 0;
+			// 
+			// frmCustomerManagement
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "frmCustomerManagement";
+			this.Controls.Add(this.panel1);
+			this.Name = "frmCustomerManagement";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Quản lý khách hàng";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCustomerManagement_FormClosing);
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion
+
+		private System.Windows.Forms.Panel panel1;
 	}
 }
