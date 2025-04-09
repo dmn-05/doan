@@ -2,7 +2,8 @@
 GO
 USE QuanLyBanHang;
 GO
-
+SET DATEFORMAT mdy;
+GO
 -- Bảng Khách hàng
 CREATE TABLE KhachHang (
     MaKH INT PRIMARY KEY IDENTITY NOT NULL,

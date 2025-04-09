@@ -65,7 +65,11 @@ namespace PM_QL_BanHoa {
     }
 
     private void picInvoice_details_Click(object sender, EventArgs e) {
+      fInvoice_details f = new fInvoice_details();
 
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
     }
 
     private void picImport_goods_Click(object sender, EventArgs e) {
@@ -77,11 +81,19 @@ namespace PM_QL_BanHoa {
     }
 
     private void picExport_goods_Click(object sender, EventArgs e) {
+      fExport_goods f = new fExport_goods();
 
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
     }
 
     private void picStatistics_Click(object sender, EventArgs e) {
+      fStatistics f = new fStatistics();
 
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
     }
   }
 }

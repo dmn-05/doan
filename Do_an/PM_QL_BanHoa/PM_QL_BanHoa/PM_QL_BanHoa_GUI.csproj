@@ -177,6 +177,9 @@
     <EmbeddedResource Include="fProduct.resx">
       <DependentUpon>fProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fStatistics.resx">
+      <DependentUpon>fStatistics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>
     </EmbeddedResource>
