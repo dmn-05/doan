@@ -38,10 +38,15 @@ namespace PM_QL_BanHoa {
       if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
         e.Cancel = true;
       }
+      
     }
 
     private void picEmployee_Click(object sender, EventArgs e) {
+      fEmployee f = new fEmployee();
 
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
     }
 
     private void picCustomer_Click(object sender, EventArgs e) {
@@ -61,7 +66,11 @@ namespace PM_QL_BanHoa {
     }
 
     private void picInvoice_details_Click(object sender, EventArgs e) {
+      fInvoice_details f = new fInvoice_details();
 
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
     }
 
     private void picImport_goods_Click(object sender, EventArgs e) {
@@ -73,11 +82,25 @@ namespace PM_QL_BanHoa {
     }
 
     private void picExport_goods_Click(object sender, EventArgs e) {
+      fExport_goods f = new fExport_goods();
 
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
     }
 
     private void picStatistics_Click(object sender, EventArgs e) {
+      fStatistics f = new fStatistics();
 
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
+    }
+
+    private void btnLogout_Click(object sender, EventArgs e) {
+      fLogin f = new fLogin();
+      this.Hide();
+      f.ShowDialog();
     }
   }
 }

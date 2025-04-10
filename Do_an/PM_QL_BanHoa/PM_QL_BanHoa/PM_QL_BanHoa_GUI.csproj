@@ -82,11 +82,11 @@
     <Compile Include="fCustomer.Designer.cs">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="fEmployee.cs">
+    <Compile Include="fExport_goods.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fEmployee.Designer.cs">
-      <DependentUpon>fEmployee.cs</DependentUpon>
+    <Compile Include="fExport_goods.Designer.cs">
+      <DependentUpon>fExport_goods.cs</DependentUpon>
     </Compile>
     <Compile Include="fImport_goods.cs">
       <SubType>Form</SubType>
@@ -100,6 +100,12 @@
     <Compile Include="fInvoice.Designer.cs">
       <DependentUpon>fInvoice.cs</DependentUpon>
     </Compile>
+    <Compile Include="fInvoice_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInvoice_details.Designer.cs">
+      <DependentUpon>fInvoice_details.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,11 +118,17 @@
     <Compile Include="fProduct.Designer.cs">
       <DependentUpon>fProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="fEmployeeManagement.cs">
+    <Compile Include="fEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fEmployeeManagement.Designer.cs">
-      <DependentUpon>fEmployeeManagement.cs</DependentUpon>
+    <Compile Include="fEmployee.Designer.cs">
+      <DependentUpon>fEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStatistics.Designer.cs">
+      <DependentUpon>fStatistics.cs</DependentUpon>
     </Compile>
     <Compile Include="fTableManager.cs">
       <SubType>Form</SubType>
@@ -144,8 +156,8 @@
     <EmbeddedResource Include="fCustomer.resx">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fEmployee.resx">
-      <DependentUpon>fEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="fExport_goods.resx">
+      <DependentUpon>fExport_goods.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fImport_goods.resx">
       <DependentUpon>fImport_goods.cs</DependentUpon>
@@ -153,14 +165,20 @@
     <EmbeddedResource Include="fInvoice.resx">
       <DependentUpon>fInvoice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fInvoice_details.resx">
+      <DependentUpon>fInvoice_details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fEmployeeManagement.resx">
-      <DependentUpon>fEmployeeManagement.cs</DependentUpon>
+    <EmbeddedResource Include="fEmployee.resx">
+      <DependentUpon>fEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fProduct.resx">
       <DependentUpon>fProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStatistics.resx">
+      <DependentUpon>fStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>

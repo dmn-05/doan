@@ -1,9 +1,0 @@
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\bin\Release\DAO.dll
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\bin\Release\DAO.pdb
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\bin\Release\DTO.dll
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\bin\Release\DTO.pdb
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Release\DAO.csproj.AssemblyReference.cache
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Release\DAO.csproj.CoreCompileInputs.cache
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Release\DAO.csproj.Up2Date
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Release\DAO.dll
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Release\DAO.pdb

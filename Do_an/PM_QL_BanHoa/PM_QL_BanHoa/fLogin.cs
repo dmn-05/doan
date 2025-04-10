@@ -17,47 +17,24 @@ namespace PM_QL_BanHoa {
       InitializeComponent();
     }
 
-    private void btnExit_Click(object sender, EventArgs e) {
-      Application.Exit();
-    }
-
     private void btnLogin_Click(object sender, EventArgs e) {
-      fAdmin f_Admin = new fAdmin();
-      fEmployee f_Employee = new fEmployee();
-      
       string Username = txtUserName.Text;
       string Password = txtPassword.Text;
 
       if (Login_Admin(Username, Password)) {
-				MessageBox.Show(
-					"Đăng nhập thành công quản trị viên",
-					"Thông báo",
-					MessageBoxButtons.OK,
-					MessageBoxIcon.Information
-				);
-
-				this.Hide();
-        f_Admin.ShowDialog();
+        fAdmin f = new fAdmin();
+        this.txtUserName.Clear();
+        this.txtPassword.Clear();
+        this.Hide();
+        f.ShowDialog();
         this.Show();
       } else if (Login(Username, Password)) {
-        MessageBox.Show(
-          "Đăng nhập thành công nhân viên",
-          "Thông báo",
-          MessageBoxButtons.OK,
-          MessageBoxIcon.Information
-        );
-
-        this.Hide();
-        f_Employee.ShowDialog();
-        this.Show();
+        this.txtUserName.Clear();
+        this.txtPassword.Clear();
+        MessageBox.Show("Đăng nhập thành công nhân viên", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
       } else {
-				MessageBox.Show(
-					"Đăng nhập thất bại",
-					"Thông báo",
-					MessageBoxButtons.OK,
-					MessageBoxIcon.Information
-				);
-			}
+        MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+      }
     }
     private bool Login(string username, string password) {
       return AccountBUS.Instance.Login(username, password);
@@ -77,6 +54,10 @@ namespace PM_QL_BanHoa {
       } else {
         txtPassword.UseSystemPasswordChar = true;
       }
+    }
+
+    private void fLogin_Load(object sender, EventArgs e) {
+     
     }
   }
 }

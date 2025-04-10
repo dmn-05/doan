@@ -4,9 +4,3 @@ D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DTO\obj\Debug\DTO.csproj.AssemblyRefe
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DTO\obj\Debug\DTO.dll
 D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DTO\obj\Debug\DTO.pdb
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\bin\Debug\DTO.dll
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\bin\Debug\DTO.pdb
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\obj\Debug\DTO.dll
-D:\workspace\doan\Do_an\PM_QL_BanHoa\DTO\obj\Debug\DTO.pdb
