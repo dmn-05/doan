@@ -12,6 +12,7 @@ using System.Windows.Forms;
 namespace PM_QL_BanHoa {
   public partial class fStatistics : Form {
     DataSet dsDoanhThu = new DataSet();
+    DataSet dsHoaDon = new DataSet();
     public fStatistics() {
       InitializeComponent();
     }
@@ -33,10 +34,14 @@ namespace PM_QL_BanHoa {
       }
 
       if (dsDoanhThu.Tables["DoanhThu"].Rows.Count > 0) {
-        txtRevenue.Text = dsDoanhThu.Tables["DoanhThu"].Rows[0]["revenue"].ToString();
+        object doanhThu = dsDoanhThu.Tables["DoanhThu"].Rows[0]["revenue"];
+        txtRevenue.Text = doanhThu == DBNull.Value ? "0" : doanhThu.ToString();
       } else {
         txtRevenue.Text = "0";
       }
+      txtRevenue.Text += " VNĐ";
+      query = "Select * From HoaDon WHERE NgayLapHoaDon >= @datefrom AND NgayLapHoaDon <= @dateto";
+      LoadDSHD(query, new object[] { datefrom, dateto });
     }
 
     private void btnAll_Click(object sender, EventArgs e) {
@@ -51,14 +56,34 @@ namespace PM_QL_BanHoa {
       }
 
       if (dsDoanhThu.Tables["DoanhThu"].Rows.Count > 0) {
-        txtRevenue.Text = dsDoanhThu.Tables["DoanhThu"].Rows[0]["revenue"].ToString();
+        object doanhThu = dsDoanhThu.Tables["DoanhThu"].Rows[0]["revenue"];
+        txtRevenue.Text = doanhThu == DBNull.Value ? "0" : doanhThu.ToString();
       } else {
         txtRevenue.Text = "0";
       }
+      txtRevenue.Text += " VNĐ";
+
+      query = "Select * From HoaDon";
+      LoadDSHD(query);
     }
 
     private void fStatistics_Load(object sender, EventArgs e) {
-      txtRevenue.Text = "0";
+      txtRevenue.Text = "0 VNĐ";
+      string query = "Select * From HoaDon";
+      LoadDSHD(query);
+    }
+    private void LoadDSHD(string query, object[] parameter = null) {
+      DataTable data = DataProviderBUS.Instance.ExecuteQuery(query, parameter);
+      data.TableName = "HoaDon";
+
+      if (dsHoaDon.Tables.Contains("HoaDon")) {
+        dsHoaDon.Tables["HoaDon"].Clear();
+        dsHoaDon.Tables["HoaDon"].Merge(data);
+      } else {
+        dsHoaDon.Tables.Add(data);
+      }
+
+      dgvStatistics.DataSource = dsHoaDon.Tables["HoaDon"];
     }
 
     private void dateFrom_ValueChanged(object sender, EventArgs e) {

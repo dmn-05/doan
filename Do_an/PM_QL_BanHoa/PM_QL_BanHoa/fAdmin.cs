@@ -38,6 +38,7 @@ namespace PM_QL_BanHoa {
       if (MessageBox.Show("Bạn có muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK) {
         e.Cancel = true;
       }
+      
     }
 
     private void picEmployee_Click(object sender, EventArgs e) {
@@ -94,6 +95,12 @@ namespace PM_QL_BanHoa {
       this.Hide();
       f.ShowDialog();
       this.Show();
+    }
+
+    private void btnLogout_Click(object sender, EventArgs e) {
+      fLogin f = new fLogin();
+      this.Hide();
+      f.ShowDialog();
     }
   }
 }
