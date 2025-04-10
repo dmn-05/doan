@@ -7,6 +7,7 @@ using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using PM_QL_BanHoa.DAO;
+
 namespace PM_QL_BanHoa.DAO {
   public class DataProviderDAO {
     private string ConnectionSTR = "Data Source=.\\SQLEXPRESS;Initial Catalog=QuanLyBanHang;Integrated Security=True";

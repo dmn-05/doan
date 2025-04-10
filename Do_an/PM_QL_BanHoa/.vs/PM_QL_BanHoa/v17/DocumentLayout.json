@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|solutionrelative:pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D153AD60-9AF7-4DB9-BA74-96F60A19F84F}|DAO\\DAO.csproj|d:\\workspace\\doan\\do_an\\pm_ql_banhoa\\dao\\dataproviderdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D153AD60-9AF7-4DB9-BA74-96F60A19F84F}|DAO\\DAO.csproj|solutionrelative:dao\\dataproviderdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\pm_ql_banhoa\\femployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|solutionrelative:pm_ql_banhoa\\femployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\pm_ql_banhoa\\femployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|solutionrelative:pm_ql_banhoa\\femployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|solutionrelative:pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 294,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -47,50 +39,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmBillManagement.cs [Design]",
+              "Title": "frmBillManagement.cs",
               "DocumentMoniker": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
               "RelativeDocumentMoniker": "PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
-              "ToolTip": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\Employee\\frmBillManagement.cs [Design]",
-              "RelativeToolTip": "PM_QL_BanHoa\\Employee\\frmBillManagement.cs [Design]",
+              "ToolTip": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
+              "RelativeToolTip": "PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwDIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T06:59:44.911Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataProviderDAO.cs",
-              "DocumentMoniker": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\DAO\\DataProviderDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\DataProviderDAO.cs",
-              "ToolTip": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\DAO\\DataProviderDAO.cs",
-              "RelativeToolTip": "DAO\\DataProviderDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T09:24:36.354Z",
+              "WhenOpened": "2025-04-10T06:07:23.806Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "fEmployee.cs",
-              "DocumentMoniker": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\fEmployee.cs",
-              "RelativeDocumentMoniker": "PM_QL_BanHoa\\fEmployee.cs",
-              "ToolTip": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\fEmployee.cs",
-              "RelativeToolTip": "PM_QL_BanHoa\\fEmployee.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T05:58:29.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "fEmployee.cs [Design]",
-              "DocumentMoniker": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\fEmployee.cs",
-              "RelativeDocumentMoniker": "PM_QL_BanHoa\\fEmployee.cs",
-              "ToolTip": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\fEmployee.cs [Design]",
-              "RelativeToolTip": "PM_QL_BanHoa\\fEmployee.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T17:00:19.487Z"
             }
           ]
         }
