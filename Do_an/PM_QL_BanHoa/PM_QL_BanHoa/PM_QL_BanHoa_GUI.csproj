@@ -82,11 +82,19 @@
     <Compile Include="fCustomer.Designer.cs">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="fExport_goods.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fExport_goods.Designer.cs">
       <DependentUpon>fExport_goods.cs</DependentUpon>
+=======
+    <Compile Include="fEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmployee.Designer.cs">
+      <DependentUpon>fEmployee.cs</DependentUpon>
+>>>>>>> origin/main
     </Compile>
     <Compile Include="fImport_goods.cs">
       <SubType>Form</SubType>
@@ -121,6 +129,7 @@
     <Compile Include="fEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="fEmployee.Designer.cs">
       <DependentUpon>fEmployee.cs</DependentUpon>
     </Compile>
@@ -129,6 +138,10 @@
     </Compile>
     <Compile Include="fStatistics.Designer.cs">
       <DependentUpon>fStatistics.cs</DependentUpon>
+=======
+    <Compile Include="fEmployeeManagement.Designer.cs">
+      <DependentUpon>fEmployeeManagement.cs</DependentUpon>
+>>>>>>> origin/main
     </Compile>
     <Compile Include="fTableManager.cs">
       <SubType>Form</SubType>
@@ -156,8 +169,13 @@
     <EmbeddedResource Include="fCustomer.resx">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="fExport_goods.resx">
       <DependentUpon>fExport_goods.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="fEmployee.resx">
+      <DependentUpon>fEmployee.cs</DependentUpon>
+>>>>>>> origin/main
     </EmbeddedResource>
     <EmbeddedResource Include="fImport_goods.resx">
       <DependentUpon>fImport_goods.cs</DependentUpon>

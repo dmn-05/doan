@@ -22,6 +22,7 @@ namespace PM_QL_BanHoa {
       string Password = txtPassword.Text;
 
       if (Login_Admin(Username, Password)) {
+<<<<<<< HEAD
         fAdmin f = new fAdmin();
         this.txtUserName.Clear();
         this.txtPassword.Clear();
@@ -32,6 +33,29 @@ namespace PM_QL_BanHoa {
         this.txtUserName.Clear();
         this.txtPassword.Clear();
         MessageBox.Show("Đăng nhập thành công nhân viên", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+=======
+				MessageBox.Show(
+					"Đăng nhập thành công quản trị viên",
+					"Thông báo",
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Information
+				);
+
+				this.Hide();
+        f_Admin.ShowDialog();
+        this.Show();
+      } else if (Login(Username, Password)) {
+        MessageBox.Show(
+          "Đăng nhập thành công nhân viên",
+          "Thông báo",
+          MessageBoxButtons.OK,
+          MessageBoxIcon.Information
+        );
+
+        this.Hide();
+        f_Employee.ShowDialog();
+        this.Show();
+>>>>>>> origin/main
       } else {
         MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
       }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO {
   public class Export_goodsDTO {
-    public int MaHDXuat { get; set; }
-    public DateTime NgayXuat { get; set; }
-    public int MaSP {  get; set; }
-    public int SoLuong { get; set; }
-    public double ThanhTien { get; set; }
+    private int MaHDXuat;
+    private DateTime NgayXuat;
+    private int MaSP;
+    private int SoLuong;
+    private double ThanhTien;
   }
 }

@@ -116,7 +116,7 @@ namespace PM_QL_BanHoa {
       string name = txtName.Text.Trim();
       string query = "SELECT * FROM KhachHang WHERE TenKH LIKE @Name";
 
-      DataTable data = DataProviderBUS.Instance.ExecuteQuery(query, new object[] { "%" + name + "%" });
+      DataTable data = DataProviderBUS.Instance.ExecuteQuery_Search(query, new object[] { "%" + name + "%" });
 
       if (dsKhachHang.Tables.Contains("KhachHang")) {
         dsKhachHang.Tables["KhachHang"].Clear();  // Xóa dữ liệu cũ
