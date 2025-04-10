@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|d:\\workspace\\doan\\do_an\\pm_ql_banhoa\\pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|solutionrelative:pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|d:\\workspace\\doan\\do_an\\pm_ql_banhoa\\pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D17A8041-7FDA-42B0-B192-B005938E8FA3}|PM_QL_BanHoa\\PM_QL_BanHoa_GUI.csproj|solutionrelative:pm_ql_banhoa\\employee\\frmbillmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 294,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +42,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmBillManagement.cs [Design]",
+              "DocumentMoniker": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
+              "RelativeDocumentMoniker": "PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
+              "ToolTip": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\Employee\\frmBillManagement.cs [Design]",
+              "RelativeToolTip": "PM_QL_BanHoa\\Employee\\frmBillManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T16:03:44.416Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmBillManagement.cs",
               "DocumentMoniker": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
               "RelativeDocumentMoniker": "PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
               "ToolTip": "D:\\workspace\\doan\\Do_an\\PM_QL_BanHoa\\PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
               "RelativeToolTip": "PM_QL_BanHoa\\Employee\\frmBillManagement.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAkwDIAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T06:07:23.806Z",
               "EditorCaption": ""

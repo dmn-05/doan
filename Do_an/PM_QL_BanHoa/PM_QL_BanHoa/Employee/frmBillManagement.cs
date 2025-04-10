@@ -46,7 +46,8 @@ namespace PM_QL_BanHoa.Employee {
 		}
 
 		private void frmBillManagement_Load(object sender, EventArgs e) {
-			// Invoke function to load data from HoaDon table.
+			// Invoke loadBillData() function to load data from HoaDon table.
+			// Gọi hàm loadBillData() để xuất ra DataGridView các dữ liệu trong bảng HoaDon.
 			loadBillData();
 		}
 	}
