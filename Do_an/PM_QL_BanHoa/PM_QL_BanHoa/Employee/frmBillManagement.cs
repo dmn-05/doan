@@ -23,7 +23,7 @@ namespace PM_QL_BanHoa.Employee {
 
 		// Load dữ liệu của hóa đơn có sẵn từ cơ sở dữ liệu ra màn hình.
 		void loadBillData() {
-			string connectionString = "Data Source=.\\sqlexpress;Initial Catalog=QuanLyBanHang;Integrated Security=True";
+			string connectionString = "Data Source=.\\sqlexpress01;Initial Catalog=QuanLyBanHang;Integrated Security=True";
 
 			using (SqlConnection connection = new SqlConnection(connectionString)) {
 				try {

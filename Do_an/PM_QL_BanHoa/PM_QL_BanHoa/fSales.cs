@@ -24,7 +24,7 @@ namespace PM_QL_BanHoa {
 
     private void ptbBillManagement_Click(object sender, EventArgs e) {
       frmBillManagement f = new frmBillManagement();
-      Z
+      
       this.Hide();
       f.ShowDialog();
       this.Show();

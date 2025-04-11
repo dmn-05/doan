@@ -30,6 +30,7 @@
         {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fInvoice));
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
       this.groupBox2 = new System.Windows.Forms.GroupBox();
       this.dateNgayLapHD = new System.Windows.Forms.DateTimePicker();
       this.label5 = new System.Windows.Forms.Label();
@@ -69,6 +70,7 @@
       this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+      this.groupBox2.BackColor = System.Drawing.Color.Transparent;
       this.groupBox2.Controls.Add(this.dateNgayLapHD);
       this.groupBox2.Controls.Add(this.label5);
       this.groupBox2.Controls.Add(this.txtDiaChiGiao);
@@ -255,6 +257,7 @@
       this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+      this.groupBox1.BackColor = System.Drawing.Color.Transparent;
       this.groupBox1.Controls.Add(this.dgvInvoice);
       this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBox1.ForeColor = System.Drawing.Color.Blue;
@@ -271,6 +274,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.dgvInvoice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+      this.dgvInvoice.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
       this.dgvInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.dgvInvoice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMaHD,
@@ -280,6 +284,14 @@
             this.colDiaChiGiao,
             this.colThanhTien,
             this.colTrangThai});
+      dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+      dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+      dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+      dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+      this.dgvInvoice.DefaultCellStyle = dataGridViewCellStyle2;
       this.dgvInvoice.Location = new System.Drawing.Point(26, 46);
       this.dgvInvoice.Name = "dgvInvoice";
       this.dgvInvoice.RowHeadersWidth = 51;
@@ -322,9 +334,9 @@
       // 
       this.colNgayLapHoaDon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
       this.colNgayLapHoaDon.DataPropertyName = "NgayLapHoaDon";
-      dataGridViewCellStyle2.Format = "dd/MM/yyyy";
-      dataGridViewCellStyle2.NullValue = null;
-      this.colNgayLapHoaDon.DefaultCellStyle = dataGridViewCellStyle2;
+      dataGridViewCellStyle1.Format = "dd/MM/yyyy";
+      dataGridViewCellStyle1.NullValue = null;
+      this.colNgayLapHoaDon.DefaultCellStyle = dataGridViewCellStyle1;
       this.colNgayLapHoaDon.FillWeight = 22.45989F;
       this.colNgayLapHoaDon.HeaderText = "NgayLapHoaDon";
       this.colNgayLapHoaDon.MinimumWidth = 100;
@@ -361,6 +373,7 @@
       // 
       // tableLayoutPanel1
       // 
+      this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
       this.tableLayoutPanel1.ColumnCount = 2;
       this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
       this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 400F));
@@ -378,6 +391,8 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+      this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.ClientSize = new System.Drawing.Size(1247, 738);
       this.Controls.Add(this.tableLayoutPanel1);
       this.Name = "fInvoice";

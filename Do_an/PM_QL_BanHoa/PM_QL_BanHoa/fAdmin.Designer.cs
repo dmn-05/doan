@@ -113,7 +113,7 @@
       // picExport_goods
       // 
       this.picExport_goods.Anchor = System.Windows.Forms.AnchorStyles.None;
-      this.picExport_goods.BackColor = System.Drawing.SystemColors.Control;
+      this.picExport_goods.BackColor = System.Drawing.Color.Transparent;
       this.picExport_goods.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picExport_goods.BackgroundImage")));
       this.picExport_goods.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.picExport_goods.Location = new System.Drawing.Point(593, 294);
@@ -162,7 +162,7 @@
       // picCustomer
       // 
       this.picCustomer.Anchor = System.Windows.Forms.AnchorStyles.None;
-      this.picCustomer.BackColor = System.Drawing.SystemColors.Control;
+      this.picCustomer.BackColor = System.Drawing.Color.Transparent;
       this.picCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picCustomer.BackgroundImage")));
       this.picCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.picCustomer.Location = new System.Drawing.Point(593, 37);
@@ -213,6 +213,8 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+      this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.ClientSize = new System.Drawing.Size(1244, 659);
       this.Controls.Add(this.panel2);
       this.Name = "fAdmin";
