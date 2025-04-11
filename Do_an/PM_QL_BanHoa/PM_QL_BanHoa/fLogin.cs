@@ -29,9 +29,12 @@ namespace PM_QL_BanHoa {
         f.ShowDialog();
         this.Show();
       } else if (Login(Username, Password)) {
+        fSales f = new fSales();
         this.txtUserName.Clear();
         this.txtPassword.Clear();
-        MessageBox.Show("Đăng nhập thành công nhân viên", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        this.Hide();
+        f.ShowDialog();
+        this.Show();
       } else {
         MessageBox.Show("Đăng nhập thất bại", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
       }
