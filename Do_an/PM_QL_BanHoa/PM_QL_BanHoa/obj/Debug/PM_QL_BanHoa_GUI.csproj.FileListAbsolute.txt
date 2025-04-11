@@ -89,3 +89,34 @@ D:\Đồ Án Lập Trình Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_Q
 D:\Đồ Án Lập Trình Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.exe
 D:\Đồ Án Lập Trình Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.pdb
 D:\Đồ Án Lập Trình Windows\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fStatistics.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa_GUI.csproj.AssemblyReference.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.exe
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\PM_QL_BanHoa.exe.config
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\PM_QL_BanHoa.exe
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\PM_QL_BanHoa.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\BUS.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\DTO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\DAO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\BUS.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\DTO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\bin\Debug\DAO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.Employee.frmBillManagement.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.Employee.frmCustomerManagement.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.Employee.frmProductManagement.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fAccountProfile.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fAdmin.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fCustomer.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fExport_goods.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fImport_goods.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fInvoice.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fInvoice_details.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fLogin.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fEmployee.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fProduct.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fStatistics.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.fTableManager.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa.Properties.Resources.resources
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa_GUI.csproj.GenerateResource.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_BanHoa_GUI.csproj.CoreCompileInputs.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\PM_QL_BanHoa\obj\Debug\PM_QL_Ba.AFCB835C.Up2Date

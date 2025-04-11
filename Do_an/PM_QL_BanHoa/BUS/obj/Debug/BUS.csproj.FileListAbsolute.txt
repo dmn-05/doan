@@ -20,3 +20,14 @@ C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.
 C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.dll
 C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DTO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DTO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.pdb

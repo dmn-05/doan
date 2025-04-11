@@ -10,7 +10,7 @@ using PM_QL_BanHoa.DAO;
 
 namespace PM_QL_BanHoa.DAO {
   public class DataProviderDAO {
-    private string ConnectionSTR = "Data Source=.\\SQLEXPRESS01;Initial Catalog=QuanLyBanHang;Integrated Security=True";
+    private string ConnectionSTR = "Data Source=.\\SQLEXPRESS;Initial Catalog=QuanLyBanHang;Integrated Security=True";
     private static DataProviderDAO instance;
 
     public static DataProviderDAO Instance {
@@ -42,6 +42,7 @@ namespace PM_QL_BanHoa.DAO {
       }
       return data;
     }
+
     public int ExecuteNonQuery(string query, object[] parameter = null) {
       int data = 0;
       using (SqlConnection connection = new SqlConnection(ConnectionSTR)) {
@@ -62,6 +63,7 @@ namespace PM_QL_BanHoa.DAO {
       }
       return data;
     }
+
     public object ExecuteScalar(string query, object[] parameter = null) {
       object data = 0;
       using (SqlConnection connection = new SqlConnection(ConnectionSTR)) {
