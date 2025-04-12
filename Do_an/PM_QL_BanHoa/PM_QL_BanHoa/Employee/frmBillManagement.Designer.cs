@@ -23,6 +23,7 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
+			this.grbInvoiceProcess = new System.Windows.Forms.GroupBox();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.dataGridView = new System.Windows.Forms.DataGridView();
 			this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -32,32 +33,65 @@
 			this.colCustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colStaffID = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colBillID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.grbBillManagement = new System.Windows.Forms.GroupBox();
-			this.btnCreateBill = new System.Windows.Forms.Button();
-			this.btnUpdateBill = new System.Windows.Forms.Button();
-			this.txtBillID = new System.Windows.Forms.TextBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.txtInvoiceID = new System.Windows.Forms.TextBox();
 			this.txtStaffID = new System.Windows.Forms.TextBox();
 			this.txtCustomerID = new System.Windows.Forms.TextBox();
-			this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-			this.txtStatus = new System.Windows.Forms.TextBox();
+			this.txtDeliveryAddress = new System.Windows.Forms.TextBox();
 			this.txtTotal = new System.Windows.Forms.TextBox();
-			this.txtAddressDelivery = new System.Windows.Forms.TextBox();
+			this.txtStatus = new System.Windows.Forms.TextBox();
+			this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+			this.btnAddInvoice = new System.Windows.Forms.Button();
+			this.btnUpdateInvoice = new System.Windows.Forms.Button();
+			this.grbInvoiceProcess.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-			this.grbBillManagement.SuspendLayout();
 			this.SuspendLayout();
+			// 
+			// grbInvoiceProcess
+			// 
+			this.grbInvoiceProcess.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.grbInvoiceProcess.Controls.Add(this.btnUpdateInvoice);
+			this.grbInvoiceProcess.Controls.Add(this.btnAddInvoice);
+			this.grbInvoiceProcess.Controls.Add(this.dateTimePicker);
+			this.grbInvoiceProcess.Controls.Add(this.txtStatus);
+			this.grbInvoiceProcess.Controls.Add(this.txtTotal);
+			this.grbInvoiceProcess.Controls.Add(this.txtDeliveryAddress);
+			this.grbInvoiceProcess.Controls.Add(this.txtCustomerID);
+			this.grbInvoiceProcess.Controls.Add(this.txtStaffID);
+			this.grbInvoiceProcess.Controls.Add(this.txtInvoiceID);
+			this.grbInvoiceProcess.Controls.Add(this.label7);
+			this.grbInvoiceProcess.Controls.Add(this.label6);
+			this.grbInvoiceProcess.Controls.Add(this.label5);
+			this.grbInvoiceProcess.Controls.Add(this.label4);
+			this.grbInvoiceProcess.Controls.Add(this.label3);
+			this.grbInvoiceProcess.Controls.Add(this.label2);
+			this.grbInvoiceProcess.Controls.Add(this.label1);
+			this.grbInvoiceProcess.Location = new System.Drawing.Point(916, 6);
+			this.grbInvoiceProcess.Name = "grbInvoiceProcess";
+			this.grbInvoiceProcess.Size = new System.Drawing.Size(562, 697);
+			this.grbInvoiceProcess.TabIndex = 1;
+			this.grbInvoiceProcess.TabStop = false;
+			this.grbInvoiceProcess.Text = "Xử lý hóa đơn";
 			// 
 			// panel1
 			// 
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel1.Controls.Add(this.grbBillManagement);
 			this.panel1.Controls.Add(this.dataGridView);
-			this.panel1.Location = new System.Drawing.Point(11, 10);
+			this.panel1.Controls.Add(this.grbInvoiceProcess);
+			this.panel1.Location = new System.Drawing.Point(12, 11);
 			this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1479, 702);
+			this.panel1.Size = new System.Drawing.Size(1481, 703);
 			this.panel1.TabIndex = 0;
 			// 
 			// dataGridView
@@ -75,13 +109,14 @@
             this.colStatus,
             this.colAddressDelivery,
             this.colTotal});
-			this.dataGridView.Location = new System.Drawing.Point(3, 2);
+			this.dataGridView.Location = new System.Drawing.Point(3, 5);
 			this.dataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.dataGridView.Name = "dataGridView";
 			this.dataGridView.RowHeadersWidth = 62;
 			this.dataGridView.RowTemplate.Height = 28;
-			this.dataGridView.Size = new System.Drawing.Size(905, 698);
+			this.dataGridView.Size = new System.Drawing.Size(907, 698);
 			this.dataGridView.TabIndex = 0;
+			this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
 			// 
 			// colTotal
 			// 
@@ -132,102 +167,152 @@
 			this.colBillID.MinimumWidth = 8;
 			this.colBillID.Name = "colBillID";
 			// 
-			// grbBillManagement
+			// label1
 			// 
-			this.grbBillManagement.Controls.Add(this.txtAddressDelivery);
-			this.grbBillManagement.Controls.Add(this.txtTotal);
-			this.grbBillManagement.Controls.Add(this.txtStatus);
-			this.grbBillManagement.Controls.Add(this.dateTimePicker);
-			this.grbBillManagement.Controls.Add(this.txtCustomerID);
-			this.grbBillManagement.Controls.Add(this.txtStaffID);
-			this.grbBillManagement.Controls.Add(this.txtBillID);
-			this.grbBillManagement.Controls.Add(this.btnUpdateBill);
-			this.grbBillManagement.Controls.Add(this.btnCreateBill);
-			this.grbBillManagement.Location = new System.Drawing.Point(914, 3);
-			this.grbBillManagement.Name = "grbBillManagement";
-			this.grbBillManagement.Size = new System.Drawing.Size(562, 696);
-			this.grbBillManagement.TabIndex = 1;
-			this.grbBillManagement.TabStop = false;
-			this.grbBillManagement.Text = "Xử lý hóa đơn";
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(75, 47);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(116, 25);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Mã hóa đơn";
 			// 
-			// btnCreateBill
+			// label2
 			// 
-			this.btnCreateBill.Location = new System.Drawing.Point(95, 611);
-			this.btnCreateBill.Name = "btnCreateBill";
-			this.btnCreateBill.Size = new System.Drawing.Size(150, 50);
-			this.btnCreateBill.TabIndex = 0;
-			this.btnCreateBill.Text = "Tạo hóa đơn";
-			this.btnCreateBill.UseVisualStyleBackColor = true;
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(75, 107);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(130, 25);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "Mã nhân viên";
 			// 
-			// btnUpdateBill
+			// label3
 			// 
-			this.btnUpdateBill.Location = new System.Drawing.Point(344, 611);
-			this.btnUpdateBill.Name = "btnUpdateBill";
-			this.btnUpdateBill.Size = new System.Drawing.Size(150, 50);
-			this.btnUpdateBill.TabIndex = 1;
-			this.btnUpdateBill.Text = "Chỉnh sửa hóa đơn";
-			this.btnUpdateBill.UseVisualStyleBackColor = true;
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(75, 170);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(147, 25);
+			this.label3.TabIndex = 2;
+			this.label3.Text = "Mã khách hàng";
 			// 
-			// txtBillID
+			// label4
 			// 
-			this.txtBillID.Location = new System.Drawing.Point(260, 66);
-			this.txtBillID.Name = "txtBillID";
-			this.txtBillID.Size = new System.Drawing.Size(250, 22);
-			this.txtBillID.TabIndex = 2;
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(75, 234);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(165, 25);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "Ngày lập hóa đơn";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(78, 391);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(113, 25);
+			this.label5.TabIndex = 4;
+			this.label5.Text = "Địa chỉ giao";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(75, 496);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(105, 25);
+			this.label6.TabIndex = 5;
+			this.label6.Text = "Thành tiền";
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.Location = new System.Drawing.Point(75, 298);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(100, 25);
+			this.label7.TabIndex = 6;
+			this.label7.Text = "Trạng thái";
+			// 
+			// txtInvoiceID
+			// 
+			this.txtInvoiceID.Location = new System.Drawing.Point(258, 47);
+			this.txtInvoiceID.Name = "txtInvoiceID";
+			this.txtInvoiceID.ReadOnly = true;
+			this.txtInvoiceID.Size = new System.Drawing.Size(250, 22);
+			this.txtInvoiceID.TabIndex = 7;
 			// 
 			// txtStaffID
 			// 
-			this.txtStaffID.Location = new System.Drawing.Point(260, 132);
+			this.txtStaffID.Location = new System.Drawing.Point(258, 111);
 			this.txtStaffID.Name = "txtStaffID";
-			this.txtStaffID.ReadOnly = true;
 			this.txtStaffID.Size = new System.Drawing.Size(250, 22);
-			this.txtStaffID.TabIndex = 3;
+			this.txtStaffID.TabIndex = 8;
 			// 
 			// txtCustomerID
 			// 
-			this.txtCustomerID.Location = new System.Drawing.Point(260, 205);
+			this.txtCustomerID.Location = new System.Drawing.Point(258, 173);
 			this.txtCustomerID.Name = "txtCustomerID";
-			this.txtCustomerID.ReadOnly = true;
 			this.txtCustomerID.Size = new System.Drawing.Size(250, 22);
-			this.txtCustomerID.TabIndex = 4;
+			this.txtCustomerID.TabIndex = 9;
 			// 
-			// dateTimePicker
+			// txtDeliveryAddress
 			// 
-			this.dateTimePicker.Location = new System.Drawing.Point(260, 268);
-			this.dateTimePicker.Name = "dateTimePicker";
-			this.dateTimePicker.Size = new System.Drawing.Size(250, 22);
-			this.dateTimePicker.TabIndex = 5;
-			// 
-			// txtStatus
-			// 
-			this.txtStatus.Location = new System.Drawing.Point(260, 477);
-			this.txtStatus.Name = "txtStatus";
-			this.txtStatus.ReadOnly = true;
-			this.txtStatus.Size = new System.Drawing.Size(250, 22);
-			this.txtStatus.TabIndex = 6;
+			this.txtDeliveryAddress.Location = new System.Drawing.Point(258, 357);
+			this.txtDeliveryAddress.Multiline = true;
+			this.txtDeliveryAddress.Name = "txtDeliveryAddress";
+			this.txtDeliveryAddress.Size = new System.Drawing.Size(250, 100);
+			this.txtDeliveryAddress.TabIndex = 10;
 			// 
 			// txtTotal
 			// 
-			this.txtTotal.Location = new System.Drawing.Point(260, 534);
+			this.txtTotal.Location = new System.Drawing.Point(258, 500);
 			this.txtTotal.Name = "txtTotal";
-			this.txtTotal.ReadOnly = true;
 			this.txtTotal.Size = new System.Drawing.Size(250, 22);
-			this.txtTotal.TabIndex = 7;
+			this.txtTotal.TabIndex = 11;
 			// 
-			// txtAddressDelivery
+			// txtStatus
 			// 
-			this.txtAddressDelivery.Location = new System.Drawing.Point(260, 321);
-			this.txtAddressDelivery.Multiline = true;
-			this.txtAddressDelivery.Name = "txtAddressDelivery";
-			this.txtAddressDelivery.ReadOnly = true;
-			this.txtAddressDelivery.Size = new System.Drawing.Size(250, 120);
-			this.txtAddressDelivery.TabIndex = 8;
+			this.txtStatus.Location = new System.Drawing.Point(258, 302);
+			this.txtStatus.Name = "txtStatus";
+			this.txtStatus.Size = new System.Drawing.Size(250, 22);
+			this.txtStatus.TabIndex = 12;
+			// 
+			// dateTimePicker
+			// 
+			this.dateTimePicker.Location = new System.Drawing.Point(258, 237);
+			this.dateTimePicker.Name = "dateTimePicker";
+			this.dateTimePicker.Size = new System.Drawing.Size(250, 22);
+			this.dateTimePicker.TabIndex = 13;
+			// 
+			// btnAddInvoice
+			// 
+			this.btnAddInvoice.Location = new System.Drawing.Point(112, 569);
+			this.btnAddInvoice.Name = "btnAddInvoice";
+			this.btnAddInvoice.Size = new System.Drawing.Size(120, 75);
+			this.btnAddInvoice.TabIndex = 14;
+			this.btnAddInvoice.Text = "Tạo hóa đơn";
+			this.btnAddInvoice.UseVisualStyleBackColor = true;
+			this.btnAddInvoice.Click += new System.EventHandler(this.btnAddInvoice_Click);
+			// 
+			// btnUpdateInvoice
+			// 
+			this.btnUpdateInvoice.Location = new System.Drawing.Point(349, 569);
+			this.btnUpdateInvoice.Name = "btnUpdateInvoice";
+			this.btnUpdateInvoice.Size = new System.Drawing.Size(120, 75);
+			this.btnUpdateInvoice.TabIndex = 15;
+			this.btnUpdateInvoice.Text = "Chỉnh sửa hóa đơn";
+			this.btnUpdateInvoice.UseVisualStyleBackColor = true;
+			this.btnUpdateInvoice.Click += new System.EventHandler(this.btnUpdateInvoice_Click);
 			// 
 			// frmBillManagement
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1500, 722);
+			this.ClientSize = new System.Drawing.Size(1502, 723);
 			this.Controls.Add(this.panel1);
 			this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Name = "frmBillManagement";
@@ -235,17 +320,17 @@
 			this.Text = "Quản lý hóa đơn";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBillManagement_FormClosing);
 			this.Load += new System.EventHandler(this.frmBillManagement_Load);
+			this.grbInvoiceProcess.ResumeLayout(false);
+			this.grbInvoiceProcess.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-			this.grbBillManagement.ResumeLayout(false);
-			this.grbBillManagement.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
+		private System.Windows.Forms.GroupBox grbInvoiceProcess;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.GroupBox grbBillManagement;
 		private System.Windows.Forms.DataGridView dataGridView;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colBillID;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colStaffID;
@@ -254,14 +339,21 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colAddressDelivery;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colTotal;
-		private System.Windows.Forms.TextBox txtTotal;
-		private System.Windows.Forms.TextBox txtStatus;
 		private System.Windows.Forms.DateTimePicker dateTimePicker;
+		private System.Windows.Forms.TextBox txtStatus;
+		private System.Windows.Forms.TextBox txtTotal;
+		private System.Windows.Forms.TextBox txtDeliveryAddress;
 		private System.Windows.Forms.TextBox txtCustomerID;
 		private System.Windows.Forms.TextBox txtStaffID;
-		private System.Windows.Forms.TextBox txtBillID;
-		private System.Windows.Forms.Button btnUpdateBill;
-		private System.Windows.Forms.Button btnCreateBill;
-		private System.Windows.Forms.TextBox txtAddressDelivery;
+		private System.Windows.Forms.TextBox txtInvoiceID;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button btnUpdateInvoice;
+		private System.Windows.Forms.Button btnAddInvoice;
 	}
 }

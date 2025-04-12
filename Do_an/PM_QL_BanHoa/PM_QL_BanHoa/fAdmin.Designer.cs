@@ -108,11 +108,12 @@
       this.picInvoice_details.Size = new System.Drawing.Size(200, 200);
       this.picInvoice_details.TabIndex = 26;
       this.picInvoice_details.TabStop = false;
+      this.picInvoice_details.Click += new System.EventHandler(this.picInvoice_details_Click);
       // 
       // picExport_goods
       // 
       this.picExport_goods.Anchor = System.Windows.Forms.AnchorStyles.None;
-      this.picExport_goods.BackColor = System.Drawing.SystemColors.Control;
+      this.picExport_goods.BackColor = System.Drawing.Color.Transparent;
       this.picExport_goods.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picExport_goods.BackgroundImage")));
       this.picExport_goods.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.picExport_goods.Location = new System.Drawing.Point(593, 294);
@@ -120,6 +121,7 @@
       this.picExport_goods.Size = new System.Drawing.Size(200, 200);
       this.picExport_goods.TabIndex = 25;
       this.picExport_goods.TabStop = false;
+      this.picExport_goods.Click += new System.EventHandler(this.picExport_goods_Click);
       // 
       // picStatistics
       // 
@@ -131,6 +133,7 @@
       this.picStatistics.Size = new System.Drawing.Size(200, 200);
       this.picStatistics.TabIndex = 24;
       this.picStatistics.TabStop = false;
+      this.picStatistics.Click += new System.EventHandler(this.picStatistics_Click);
       // 
       // picImport_goods
       // 
@@ -142,6 +145,7 @@
       this.picImport_goods.Size = new System.Drawing.Size(200, 200);
       this.picImport_goods.TabIndex = 23;
       this.picImport_goods.TabStop = false;
+      this.picImport_goods.Click += new System.EventHandler(this.picImport_goods_Click);
       // 
       // picProduct
       // 
@@ -153,11 +157,12 @@
       this.picProduct.Size = new System.Drawing.Size(200, 200);
       this.picProduct.TabIndex = 22;
       this.picProduct.TabStop = false;
+      this.picProduct.Click += new System.EventHandler(this.picProduct_Click);
       // 
       // picCustomer
       // 
       this.picCustomer.Anchor = System.Windows.Forms.AnchorStyles.None;
-      this.picCustomer.BackColor = System.Drawing.SystemColors.Control;
+      this.picCustomer.BackColor = System.Drawing.Color.Transparent;
       this.picCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picCustomer.BackgroundImage")));
       this.picCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.picCustomer.Location = new System.Drawing.Point(593, 37);
@@ -165,6 +170,7 @@
       this.picCustomer.Size = new System.Drawing.Size(200, 200);
       this.picCustomer.TabIndex = 21;
       this.picCustomer.TabStop = false;
+      this.picCustomer.Click += new System.EventHandler(this.picCustomer_Click);
       // 
       // picInvoice
       // 
@@ -176,6 +182,7 @@
       this.picInvoice.Size = new System.Drawing.Size(200, 200);
       this.picInvoice.TabIndex = 20;
       this.picInvoice.TabStop = false;
+      this.picInvoice.Click += new System.EventHandler(this.picInvoice_Click);
       // 
       // picEmployee
       // 
@@ -187,6 +194,7 @@
       this.picEmployee.Size = new System.Drawing.Size(200, 200);
       this.picEmployee.TabIndex = 19;
       this.picEmployee.TabStop = false;
+      this.picEmployee.Click += new System.EventHandler(this.picEmployee_Click);
       // 
       // btnLogout
       // 
@@ -205,6 +213,8 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+      this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.ClientSize = new System.Drawing.Size(1244, 659);
       this.Controls.Add(this.panel2);
       this.Name = "fAdmin";

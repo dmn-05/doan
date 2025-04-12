@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fImport_goods));
       this.dgvfImport_goods = new System.Windows.Forms.DataGridView();
@@ -65,6 +66,15 @@
             this.colNgayNhap,
             this.colSoLuong,
             this.colThanhTien});
+      dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+      dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+      dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+      dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+      this.dgvfImport_goods.DefaultCellStyle = dataGridViewCellStyle2;
+      this.dgvfImport_goods.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
       this.dgvfImport_goods.Location = new System.Drawing.Point(26, 46);
       this.dgvfImport_goods.Name = "dgvfImport_goods";
       this.dgvfImport_goods.RowHeadersWidth = 51;
@@ -112,6 +122,7 @@
       // 
       // tableLayoutPanel1
       // 
+      this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
       this.tableLayoutPanel1.ColumnCount = 2;
       this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
       this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 400F));
@@ -130,9 +141,10 @@
       this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+      this.groupBox1.BackColor = System.Drawing.Color.Transparent;
       this.groupBox1.Controls.Add(this.dgvfImport_goods);
       this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.groupBox1.ForeColor = System.Drawing.Color.Blue;
+      this.groupBox1.ForeColor = System.Drawing.Color.Indigo;
       this.groupBox1.Location = new System.Drawing.Point(3, 3);
       this.groupBox1.Name = "groupBox1";
       this.groupBox1.Size = new System.Drawing.Size(841, 732);
@@ -142,6 +154,10 @@
       // 
       // groupBox2
       // 
+      this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.groupBox2.BackColor = System.Drawing.Color.Transparent;
       this.groupBox2.Controls.Add(this.cbMaSP);
       this.groupBox2.Controls.Add(this.label5);
       this.groupBox2.Controls.Add(this.label4);
@@ -150,7 +166,7 @@
       this.groupBox2.Controls.Add(this.dateNgayNhap);
       this.groupBox2.Controls.Add(this.txtSoLuong);
       this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.groupBox2.ForeColor = System.Drawing.Color.Blue;
+      this.groupBox2.ForeColor = System.Drawing.Color.Indigo;
       this.groupBox2.Location = new System.Drawing.Point(850, 3);
       this.groupBox2.Name = "groupBox2";
       this.groupBox2.Size = new System.Drawing.Size(394, 732);
@@ -195,8 +211,8 @@
       // 
       // btnAdd
       // 
-      this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Left;
-      this.btnAdd.BackColor = System.Drawing.SystemColors.Control;
+      this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+      this.btnAdd.BackColor = System.Drawing.Color.Transparent;
       this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
       this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
       this.btnAdd.ForeColor = System.Drawing.Color.Black;
@@ -228,6 +244,8 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+      this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.ClientSize = new System.Drawing.Size(1247, 738);
       this.Controls.Add(this.tableLayoutPanel1);
       this.Name = "fImport_goods";

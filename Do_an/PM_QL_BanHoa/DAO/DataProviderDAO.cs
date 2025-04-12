@@ -10,7 +10,7 @@ using PM_QL_BanHoa.DAO;
 
 namespace PM_QL_BanHoa.DAO {
   public class DataProviderDAO {
-    private string ConnectionSTR = "Data Source=.\\SQLEXPRESS;Initial Catalog=QuanLyBanHang;Integrated Security=True";
+    private string ConnectionSTR = "Data Source=.\\sqlexpress;Initial Catalog=QuanLyBanHang;Integrated Security=True";
     private static DataProviderDAO instance;
 
     public static DataProviderDAO Instance {
@@ -43,7 +43,37 @@ namespace PM_QL_BanHoa.DAO {
       return data;
     }
 
-    public int ExecuteNonQuery(string query, object[] parameter = null) {
+		// Start
+		// _ExcuteNonQuery() của Quân
+		public int _ExecuteNonQuery(string query, object[] parameter = null) {
+			int data = 0;
+
+			using (SqlConnection connection = new SqlConnection(ConnectionSTR)) {
+				connection.Open();
+
+				using (SqlCommand command = new SqlCommand(query, connection)) {
+					if (parameter != null) {
+						// Tìm tất cả các tham số @... trong query (theo thứ tự)
+						string[] listPara = query.Split(new char[] { ' ', ',', '(', ')' }, StringSplitOptions.RemoveEmptyEntries);
+						int i = 0;
+
+						foreach (string item in listPara) {
+							if (item.StartsWith("@")) {
+								command.Parameters.AddWithValue(item, parameter[i]);
+								i++;
+							}
+						}
+					}
+
+					data = command.ExecuteNonQuery();
+				}
+			}
+
+			return data;
+		}
+		// End
+
+		public int ExecuteNonQuery(string query, object[] parameter = null) {
       int data = 0;
       using (SqlConnection connection = new SqlConnection(ConnectionSTR)) {
         connection.Open();
@@ -63,7 +93,6 @@ namespace PM_QL_BanHoa.DAO {
       }
       return data;
     }
-
     public object ExecuteScalar(string query, object[] parameter = null) {
       object data = 0;
       using (SqlConnection connection = new SqlConnection(ConnectionSTR)) {

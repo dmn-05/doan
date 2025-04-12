@@ -1,25 +1,3 @@
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.dll
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.pdb
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.dll
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DTO.dll
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.pdb
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DTO.pdb
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CopyComplete
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.dll
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.pdb
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.dll
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.pdb
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.dll
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DTO.dll
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.pdb
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DTO.pdb
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.csproj.CopyComplete
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.dll
-C:\Users\Hiiiiiiiiii\Downloads\doan\Do_an\PM_QL_BanHoa\BUS\obj\Debug\BUS.pdb
 D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.dll
 D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\BUS.pdb
 D:\workspace\doan\Do_an\PM_QL_BanHoa\BUS\bin\Debug\DAO.dll

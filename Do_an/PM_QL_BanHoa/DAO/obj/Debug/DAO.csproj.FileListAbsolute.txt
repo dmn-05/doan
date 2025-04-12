@@ -1,9 +1,9 @@
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\bin\Debug\DAO.dll
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\bin\Debug\DAO.pdb
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\bin\Debug\DTO.dll
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\bin\Debug\DTO.pdb
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.csproj.CopyComplete
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.dll
-D:\Đồ án LT Windows\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\bin\Debug\DAO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\bin\Debug\DAO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\bin\Debug\DTO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\bin\Debug\DTO.pdb
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.csproj.Up2Date
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.dll
+D:\workspace\doan\Do_an\PM_QL_BanHoa\DAO\obj\Debug\DAO.pdb

@@ -25,7 +25,14 @@ namespace BUS {
     public DataTable ExecuteQuery(string query, object[] parameter = null) {
       return DataProviderDAO.Instance.ExecuteQuery(query, parameter);
     }
-    public int ExecuteNonQuery(string query, object[] parameter = null) {
+
+		// Start
+		public int _ExecuteNonQuery(string query, object[] parameter = null) {
+			return DataProviderDAO.Instance._ExecuteNonQuery(query, parameter);
+		}
+		// End
+
+		public int ExecuteNonQuery(string query, object[] parameter = null) {
       return DataProviderDAO.Instance.ExecuteNonQuery(query, parameter);
     }
   }

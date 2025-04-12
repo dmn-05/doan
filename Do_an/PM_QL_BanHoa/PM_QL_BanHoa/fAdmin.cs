@@ -102,5 +102,12 @@ namespace PM_QL_BanHoa {
       this.Hide();
       f.ShowDialog();
     }
+
+    private void picProduct_Click(object sender, EventArgs e) {
+      fProduct f = new fProduct();
+      this.Hide();
+      f.ShowDialog();
+      this.Show();
+    }
   }
 }
