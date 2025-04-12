@@ -27,6 +27,9 @@
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fStatistics));
       this.groupBox1 = new System.Windows.Forms.GroupBox();
+      this.label3 = new System.Windows.Forms.Label();
+      this.label2 = new System.Windows.Forms.Label();
+      this.label1 = new System.Windows.Forms.Label();
       this.dgvStatistics = new System.Windows.Forms.DataGridView();
       this.colMaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colMaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,9 +43,6 @@
       this.dateTo = new System.Windows.Forms.DateTimePicker();
       this.dateFrom = new System.Windows.Forms.DateTimePicker();
       this.btnFilter = new System.Windows.Forms.Button();
-      this.label1 = new System.Windows.Forms.Label();
-      this.label2 = new System.Windows.Forms.Label();
-      this.label3 = new System.Windows.Forms.Label();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgvStatistics)).BeginInit();
       this.SuspendLayout();
@@ -70,6 +70,36 @@
       this.groupBox1.TabIndex = 5;
       this.groupBox1.TabStop = false;
       this.groupBox1.Text = "Thống Kê Doanh Thu";
+      // 
+      // label3
+      // 
+      this.label3.AutoSize = true;
+      this.label3.ForeColor = System.Drawing.Color.White;
+      this.label3.Location = new System.Drawing.Point(751, 91);
+      this.label3.Name = "label3";
+      this.label3.Size = new System.Drawing.Size(126, 25);
+      this.label3.TabIndex = 16;
+      this.label3.Text = "Doanh Thu:";
+      // 
+      // label2
+      // 
+      this.label2.AutoSize = true;
+      this.label2.ForeColor = System.Drawing.Color.White;
+      this.label2.Location = new System.Drawing.Point(46, 120);
+      this.label2.Name = "label2";
+      this.label2.Size = new System.Drawing.Size(114, 25);
+      this.label2.TabIndex = 15;
+      this.label2.Text = "Đến Ngày:";
+      // 
+      // label1
+      // 
+      this.label1.AutoSize = true;
+      this.label1.ForeColor = System.Drawing.Color.White;
+      this.label1.Location = new System.Drawing.Point(46, 67);
+      this.label1.Name = "label1";
+      this.label1.Size = new System.Drawing.Size(101, 25);
+      this.label1.TabIndex = 14;
+      this.label1.Text = "Từ Ngày:";
       // 
       // dgvStatistics
       // 
@@ -229,36 +259,6 @@
       this.btnFilter.TabIndex = 5;
       this.btnFilter.UseVisualStyleBackColor = true;
       this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
-      // 
-      // label1
-      // 
-      this.label1.AutoSize = true;
-      this.label1.ForeColor = System.Drawing.Color.White;
-      this.label1.Location = new System.Drawing.Point(46, 67);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(101, 25);
-      this.label1.TabIndex = 14;
-      this.label1.Text = "Từ Ngày:";
-      // 
-      // label2
-      // 
-      this.label2.AutoSize = true;
-      this.label2.ForeColor = System.Drawing.Color.White;
-      this.label2.Location = new System.Drawing.Point(46, 120);
-      this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(114, 25);
-      this.label2.TabIndex = 15;
-      this.label2.Text = "Đến Ngày:";
-      // 
-      // label3
-      // 
-      this.label3.AutoSize = true;
-      this.label3.ForeColor = System.Drawing.Color.White;
-      this.label3.Location = new System.Drawing.Point(751, 91);
-      this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(126, 25);
-      this.label3.TabIndex = 16;
-      this.label3.Text = "Doanh Thu:";
       // 
       // fStatistics
       // 

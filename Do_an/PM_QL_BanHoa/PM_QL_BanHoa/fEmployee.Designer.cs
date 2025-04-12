@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fEmployee));
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
       this.groupBox1 = new System.Windows.Forms.GroupBox();
+      this.txtName = new System.Windows.Forms.TextBox();
+      this.lblUserName = new System.Windows.Forms.Label();
+      this.btnSearch = new System.Windows.Forms.Button();
       this.dgvEmployee = new System.Windows.Forms.DataGridView();
       this.colMaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colTenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,10 +45,7 @@
       this.colDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.colTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.txtName = new System.Windows.Forms.TextBox();
       this.btnSave = new System.Windows.Forms.Button();
-      this.lblUserName = new System.Windows.Forms.Label();
-      this.btnSearch = new System.Windows.Forms.Button();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
       this.SuspendLayout();
@@ -68,8 +69,48 @@
       this.groupBox1.TabStop = false;
       this.groupBox1.Text = "Quản Lý Nhân Viên";
       // 
+      // txtName
+      // 
+      this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+      this.txtName.Location = new System.Drawing.Point(790, 29);
+      this.txtName.Multiline = true;
+      this.txtName.Name = "txtName";
+      this.txtName.Size = new System.Drawing.Size(286, 39);
+      this.txtName.TabIndex = 27;
+      // 
+      // lblUserName
+      // 
+      this.lblUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+      this.lblUserName.AutoSize = true;
+      this.lblUserName.BackColor = System.Drawing.Color.Transparent;
+      this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lblUserName.ForeColor = System.Drawing.Color.White;
+      this.lblUserName.Location = new System.Drawing.Point(654, 35);
+      this.lblUserName.Name = "lblUserName";
+      this.lblUserName.Size = new System.Drawing.Size(114, 25);
+      this.lblUserName.TabIndex = 29;
+      this.lblUserName.Text = "Nhập Tên:";
+      // 
+      // btnSearch
+      // 
+      this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+      this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+      this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btnSearch.ForeColor = System.Drawing.Color.Blue;
+      this.btnSearch.Location = new System.Drawing.Point(1107, 22);
+      this.btnSearch.Name = "btnSearch";
+      this.btnSearch.Size = new System.Drawing.Size(50, 50);
+      this.btnSearch.TabIndex = 28;
+      this.btnSearch.UseVisualStyleBackColor = true;
+      this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+      // 
       // dgvEmployee
       // 
+      dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+      dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Blue;
+      dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+      this.dgvEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
       this.dgvEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -85,14 +126,14 @@
             this.colDiaChi,
             this.colChucVu,
             this.colTrangThai});
-      dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-      dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-      dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-      dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-      this.dgvEmployee.DefaultCellStyle = dataGridViewCellStyle1;
+      dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+      dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+      dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+      dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+      this.dgvEmployee.DefaultCellStyle = dataGridViewCellStyle2;
       this.dgvEmployee.Location = new System.Drawing.Point(24, 81);
       this.dgvEmployee.Name = "dgvEmployee";
       this.dgvEmployee.RowHeadersWidth = 51;
@@ -186,15 +227,6 @@
       this.colTrangThai.Name = "colTrangThai";
       this.colTrangThai.Width = 139;
       // 
-      // txtName
-      // 
-      this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-      this.txtName.Location = new System.Drawing.Point(790, 29);
-      this.txtName.Multiline = true;
-      this.txtName.Name = "txtName";
-      this.txtName.Size = new System.Drawing.Size(286, 39);
-      this.txtName.TabIndex = 27;
-      // 
       // btnSave
       // 
       this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -210,32 +242,6 @@
       this.btnSave.TabIndex = 30;
       this.btnSave.UseVisualStyleBackColor = false;
       this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-      // 
-      // lblUserName
-      // 
-      this.lblUserName.AutoSize = true;
-      this.lblUserName.BackColor = System.Drawing.Color.Transparent;
-      this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lblUserName.ForeColor = System.Drawing.Color.White;
-      this.lblUserName.Location = new System.Drawing.Point(654, 35);
-      this.lblUserName.Name = "lblUserName";
-      this.lblUserName.Size = new System.Drawing.Size(114, 25);
-      this.lblUserName.TabIndex = 29;
-      this.lblUserName.Text = "Nhập Tên:";
-      // 
-      // btnSearch
-      // 
-      this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-      this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-      this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-      this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btnSearch.ForeColor = System.Drawing.Color.Blue;
-      this.btnSearch.Location = new System.Drawing.Point(1107, 22);
-      this.btnSearch.Name = "btnSearch";
-      this.btnSearch.Size = new System.Drawing.Size(50, 50);
-      this.btnSearch.TabIndex = 28;
-      this.btnSearch.UseVisualStyleBackColor = true;
-      this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
       // 
       // fEmployee
       // 

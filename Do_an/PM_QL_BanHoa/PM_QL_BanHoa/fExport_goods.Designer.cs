@@ -24,6 +24,7 @@
     /// </summary>
     private void InitializeComponent() {
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fExport_goods));
       this.cbMaSP = new System.Windows.Forms.ComboBox();
@@ -80,6 +81,8 @@
       this.dgvExport_goods_goods.Location = new System.Drawing.Point(26, 46);
       this.dgvExport_goods_goods.Name = "dgvExport_goods_goods";
       this.dgvExport_goods_goods.RowHeadersWidth = 51;
+      dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+      this.dgvExport_goods_goods.RowsDefaultCellStyle = dataGridViewCellStyle3;
       this.dgvExport_goods_goods.RowTemplate.Height = 24;
       this.dgvExport_goods_goods.Size = new System.Drawing.Size(786, 657);
       this.dgvExport_goods_goods.TabIndex = 0;

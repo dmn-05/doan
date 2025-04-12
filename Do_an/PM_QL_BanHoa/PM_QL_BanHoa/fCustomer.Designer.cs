@@ -30,6 +30,7 @@
         {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fCustomer));
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
       this.groupBox1 = new System.Windows.Forms.GroupBox();
       this.lblUserName = new System.Windows.Forms.Label();
       this.btnSearch = new System.Windows.Forms.Button();
@@ -66,6 +67,7 @@
       // 
       // lblUserName
       // 
+      this.lblUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
       this.lblUserName.AutoSize = true;
       this.lblUserName.BackColor = System.Drawing.Color.Transparent;
       this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,6 +104,10 @@
       // dgvCustomer
       // 
       this.dgvCustomer.AllowUserToOrderColumns = true;
+      dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+      dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+      dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+      this.dgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
       this.dgvCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -113,14 +119,14 @@
             this.colSoDienThoai,
             this.colEmail,
             this.colDiaChi});
-      dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-      dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-      dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-      dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-      this.dgvCustomer.DefaultCellStyle = dataGridViewCellStyle1;
+      dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+      dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+      dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+      dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+      dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+      this.dgvCustomer.DefaultCellStyle = dataGridViewCellStyle2;
       this.dgvCustomer.Location = new System.Drawing.Point(24, 77);
       this.dgvCustomer.Name = "dgvCustomer";
       this.dgvCustomer.RowHeadersWidth = 51;

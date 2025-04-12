@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
       System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fImport_goods));
       this.dgvfImport_goods = new System.Windows.Forms.DataGridView();
@@ -78,6 +79,8 @@
       this.dgvfImport_goods.Location = new System.Drawing.Point(26, 46);
       this.dgvfImport_goods.Name = "dgvfImport_goods";
       this.dgvfImport_goods.RowHeadersWidth = 51;
+      dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+      this.dgvfImport_goods.RowsDefaultCellStyle = dataGridViewCellStyle3;
       this.dgvfImport_goods.RowTemplate.Height = 24;
       this.dgvfImport_goods.Size = new System.Drawing.Size(786, 657);
       this.dgvfImport_goods.TabIndex = 0;
