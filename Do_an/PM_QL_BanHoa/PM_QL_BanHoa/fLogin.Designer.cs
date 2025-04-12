@@ -51,7 +51,7 @@ namespace PM_QL_BanHoa
 			this.panel1.Controls.Add(this.lblUserName);
 			this.panel1.Controls.Add(this.chkShowPass);
 			this.panel1.Controls.Add(this.btnLogin);
-			this.panel1.Location = new System.Drawing.Point(319, 327);
+			this.panel1.Location = new System.Drawing.Point(316, 304);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(613, 269);
 			this.panel1.TabIndex = 16;

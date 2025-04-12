@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace PM_QL_BanHoa {
   public partial class fLogin : Form {
     public fLogin() {
@@ -60,7 +59,7 @@ namespace PM_QL_BanHoa {
     }
 
     private void fLogin_Load(object sender, EventArgs e) {
-     
+
     }
 
 		private void txtPassword_KeyDown(object sender, KeyEventArgs e) {

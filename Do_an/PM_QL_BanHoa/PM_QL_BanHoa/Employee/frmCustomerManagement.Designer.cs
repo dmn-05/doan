@@ -36,13 +36,13 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.dataGridView = new System.Windows.Forms.DataGridView();
-			this.grbCustomerManagement = new System.Windows.Forms.GroupBox();
-			this.label2 = new System.Windows.Forms.Label();
 			this.colCustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.grbCustomerManagement = new System.Windows.Forms.GroupBox();
+			this.label2 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
 			this.grbCustomerManagement.SuspendLayout();
@@ -150,6 +150,7 @@
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel1.BackgroundImage = global::PM_QL_BanHoa.Properties.Resources.background;
 			this.panel1.Controls.Add(this.dataGridView);
 			this.panel1.Controls.Add(this.grbCustomerManagement);
 			this.panel1.Location = new System.Drawing.Point(11, 10);
@@ -179,39 +180,6 @@
 			this.dataGridView.Size = new System.Drawing.Size(907, 698);
 			this.dataGridView.TabIndex = 0;
 			this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
-			// 
-			// grbCustomerManagement
-			// 
-			this.grbCustomerManagement.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.grbCustomerManagement.Controls.Add(this.btnUpdateCustomerInformation);
-			this.grbCustomerManagement.Controls.Add(this.btnAddCustomer);
-			this.grbCustomerManagement.Controls.Add(this.txtEmail);
-			this.grbCustomerManagement.Controls.Add(this.txtAddress);
-			this.grbCustomerManagement.Controls.Add(this.txtPhoneNumber);
-			this.grbCustomerManagement.Controls.Add(this.txtCustomerName);
-			this.grbCustomerManagement.Controls.Add(this.txtCustomerID);
-			this.grbCustomerManagement.Controls.Add(this.label7);
-			this.grbCustomerManagement.Controls.Add(this.label6);
-			this.grbCustomerManagement.Controls.Add(this.label3);
-			this.grbCustomerManagement.Controls.Add(this.label2);
-			this.grbCustomerManagement.Controls.Add(this.label1);
-			this.grbCustomerManagement.Location = new System.Drawing.Point(916, 6);
-			this.grbCustomerManagement.Name = "grbCustomerManagement";
-			this.grbCustomerManagement.Size = new System.Drawing.Size(562, 697);
-			this.grbCustomerManagement.TabIndex = 1;
-			this.grbCustomerManagement.TabStop = false;
-			this.grbCustomerManagement.Text = "Quản lý khách hàng";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(67, 150);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(154, 25);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Tên khách hàng";
 			// 
 			// colCustomerID
 			// 
@@ -247,6 +215,40 @@
 			this.colAddress.HeaderText = "Địa chỉ";
 			this.colAddress.MinimumWidth = 6;
 			this.colAddress.Name = "colAddress";
+			// 
+			// grbCustomerManagement
+			// 
+			this.grbCustomerManagement.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.grbCustomerManagement.BackColor = System.Drawing.Color.Transparent;
+			this.grbCustomerManagement.Controls.Add(this.btnUpdateCustomerInformation);
+			this.grbCustomerManagement.Controls.Add(this.btnAddCustomer);
+			this.grbCustomerManagement.Controls.Add(this.txtEmail);
+			this.grbCustomerManagement.Controls.Add(this.txtAddress);
+			this.grbCustomerManagement.Controls.Add(this.txtPhoneNumber);
+			this.grbCustomerManagement.Controls.Add(this.txtCustomerName);
+			this.grbCustomerManagement.Controls.Add(this.txtCustomerID);
+			this.grbCustomerManagement.Controls.Add(this.label7);
+			this.grbCustomerManagement.Controls.Add(this.label6);
+			this.grbCustomerManagement.Controls.Add(this.label3);
+			this.grbCustomerManagement.Controls.Add(this.label2);
+			this.grbCustomerManagement.Controls.Add(this.label1);
+			this.grbCustomerManagement.Location = new System.Drawing.Point(916, 6);
+			this.grbCustomerManagement.Name = "grbCustomerManagement";
+			this.grbCustomerManagement.Size = new System.Drawing.Size(562, 697);
+			this.grbCustomerManagement.TabIndex = 1;
+			this.grbCustomerManagement.TabStop = false;
+			this.grbCustomerManagement.Text = "Quản lý khách hàng";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(67, 150);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(154, 25);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "Tên khách hàng";
 			// 
 			// frmCustomerManagement
 			// 

@@ -65,6 +65,7 @@
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel1.BackgroundImage = global::PM_QL_BanHoa.Properties.Resources.background;
 			this.panel1.Controls.Add(this.dataGridView);
 			this.panel1.Controls.Add(this.grbInvoiceProcess);
 			this.panel1.Location = new System.Drawing.Point(11, 10);
@@ -141,6 +142,7 @@
 			// 
 			this.grbInvoiceProcess.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.grbInvoiceProcess.BackColor = System.Drawing.Color.Transparent;
 			this.grbInvoiceProcess.Controls.Add(this.btnSearchProduct);
 			this.grbInvoiceProcess.Controls.Add(this.txtProductName);
 			this.grbInvoiceProcess.Controls.Add(this.txtProductID);
